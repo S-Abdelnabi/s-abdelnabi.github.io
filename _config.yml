@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-# title                    : "Amr Gomaa"
+title                    : "Amr Gomaa"
 title_separator          : "-"
 name                     : &name "Amr Gomaa"
 description              : &description "personal description"
@@ -80,8 +80,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "Amr Gomaa"
-  avatar           : "personal_photo_2.jpg"
+  name             : # "Amr Gomaa"
+  avatar           : "personal_photo_2.png"
   bio              : 
   location         : "Saarbrücken, Germany"
   employer         :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : https://www.linkedin.com/in/amr-gomaa-elhady/
+  linkedin         : amr-gomaa-elhady
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
