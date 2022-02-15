@@ -11,9 +11,9 @@ title                    : "Amr Gomaa"
 title_separator          : "-"
 name                     : &name "Amr Gomaa"
 description              : &description "Doctoral Researcher at Saarland University"
-url                      : https://amr-gomaa.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://amrgomaaelhady.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "amr-gomaa.github.io"
+repository               : "amrgomaaelhady.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "amr-gomaa"
+  github           : "amrgomaaelhady"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : amr-gomaa-elhady
+  linkedin         : amrgomaaelhady
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : # "replacethistwitterhandle"
+  twitter          : "amrgomaaelhady"
   vine             :
   weibo            :
   xing             :
