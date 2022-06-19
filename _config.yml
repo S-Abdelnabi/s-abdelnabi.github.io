@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Amr Gomaa"
+title                    : "Sahar Abdelnabi"
 title_separator          : "-"
-name                     : &name "Amr Gomaa"
-description              : &description "Doctoral Researcher at Saarland University"
-url                      : https://amrgomaaelhady.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Sahar Abdelnabi"
+description              : &description "PhD Candidate at CISPA"
+url                      : https://s-abdelnabi.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "amrgomaaelhady.github.io"
+repository               : "s-abdelnabi.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,15 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : # "Amr Gomaa"
-  avatar           : "personal_photo_2.png"
+  name             : # "Sahar Abdelnabi"
+  avatar           : "photo.jpg"
   bio              : 
   location         : "Saarbrücken, Germany"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=xiPvQxwAAAAJ&hl=en"
-  email            : amr.gomaa@dfki.de
-  researchgate     : "https://www.researchgate.net/profile/Amr-Gomaa-3"
+  googlescholar    : "https://scholar.google.de/citations?user=QEiYbDYAAAAJ&hl=en"
+  email            : sahar.abdelnabi@cispa.de
   uri              :
   bitbucket        :
   codepen          :
@@ -96,20 +95,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "amrgomaaelhady"
+  github           : "s-abdelnabi"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : amrgomaaelhady
+  linkedin         : sahar-abdelnabi
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "amrgomaaelhady"
+  twitter          : "AbdelnabiSahar"
   vine             :
   weibo            :
   xing             :
