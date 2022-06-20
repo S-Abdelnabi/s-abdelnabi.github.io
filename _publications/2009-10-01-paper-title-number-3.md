@@ -1,9 +1,8 @@
 ---
-title: "Artificial Fingerprinting for Generative Models: Rooting Deepfake Attribution in Training Data"
+title: "" What's in the box?!": Deflecting Adversarial Attacks by Randomly Deploying Adversarially-Disjoint Models"
 collection: publications
-authors: 'Ning Yu*, Vladislav Skripniuk*, Sahar Abdelnabi, and Mario Fritz'
-venue: "ICCV'21 (Oral)"
-video: 'https://www.youtube.com/watch?v=j8bcOHhu4Lg&ab_channel=%E4%BA%8E%E5%AE%81' 
-code: 'https://github.com/ningyu1991/ArtificialGANFingerprints'
-paperurl: 'https://arxiv.org/abs/2007.08457'
+authors: 'Sahar Abdelnabi and Mario Fritz'
+venue: "Moving Target Defense Workshop, in conjunction with CCSf'21"
+code: 'https://github.com/S-Abdelnabi/AdversariallyDisjoint'
+paperurl: 'https://arxiv.org/abs/2102.05104'
 ---
