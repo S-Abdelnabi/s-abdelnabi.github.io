@@ -17,4 +17,4 @@ author_profile: true
 
 ## Talks
 * [Multi-modal Fact-checking: Out-of-Context Images and How to Catch Them](https://www.youtube.com/watch?v=JKwRA-PM4xI&ab_channel=UCLInformationSecurityResearchGroup) at UCL Information Security seminars.
-* [Deepfakes and Fingerprinting](https://cispa.de/en/deepfakes) CISPA tl;dr podcasts.
+* [Deepfakes and Fingerprinting](https://cispa.de/en/deepfakes) CISPA tl;dr podcast.
