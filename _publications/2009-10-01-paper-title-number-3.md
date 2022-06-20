@@ -1,5 +1,5 @@
 ---
-title: "What's in the box?! Deflecting Adversarial Attacks by Randomly Deploying Adversarially-Disjoint Models"
+title: "What's in the box?!: Deflecting Adversarial Attacks by Randomly Deploying Adversarially-Disjoint Models"
 collection: publications
 authors: 'Sahar Abdelnabi and Mario Fritz'
 venue: "Moving Target Defense Workshop, in conjunction with CCS'21"
