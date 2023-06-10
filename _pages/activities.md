@@ -6,16 +6,22 @@ author_profile: true
 ---
 
 ## Reviewing
+* NeurIPS' 23 
+* ICML'23 [TEACH Workshop](https://sites.google.com/view/teach-icml-23/home)
 * CVPR'23, CVPR'22
 * ICCV'23, ECCV'22
 * TPAMI'21, TPAMI'22
 * ICLR-SDG'21
 
 ## Teaching
-* Opportunities and Risks of Large Language Models and Foundation Models seminar at Saarland University - Teaching assistant -  SS 2023.
-* [Machine Learning in Cybersecurity](https://cms.cispa.saarland/mlcysecws2122/) course at Saarland University - Teaching assistant - WS 2021/2022.
-* [High Level Computer Vision](https://cms.sic.saarland/hlcvss20/) course at Saarland University - Teaching assistant -  SS 2020.
+* "Opportunities and Risks of Large Language Models and Foundation Models" seminar at Saarland University - Teaching assistant -  SS 2023.
+* ["Machine Learning in Cybersecurity"](https://cms.cispa.saarland/mlcysecws2122/) course at Saarland University - Teaching assistant - WS 2021/2022.
+* ["High Level Computer Vision"](https://cms.sic.saarland/hlcvss20/) course at Saarland University - Teaching assistant -  SS 2020.
 
 ## Talks
-* [Multi-modal Fact-checking: Out-of-Context Images and How to Catch Them](https://www.youtube.com/watch?v=JKwRA-PM4xI&ab_channel=UCLInformationSecurityResearchGroup) at UCL Information Security seminars.
-* [Deepfakes and Fingerprinting](https://cispa.de/en/deepfakes) CISPA tl;dr podcast.
+* "Compromising LLMs: The Advent of AI Malware" at Black Hat USA, 2023. 
+* "How to Improve Automated Fact-Checking?" at Max Planck Institute for Software Systems, 2022. 
+* ["Multi-modal Fact-checking: Out-of-Context Images and How to Catch Them"](https://www.youtube.com/watch?v=JKwRA-PM4xI&ab_channel=UCLInformationSecurityResearchGroup) at UCL Information Security seminars, 2022.
+
+## Media Coverage
+* ["Deepfakes and Fingerprinting"](https://cispa.de/en/deepfakes), CISPA tl;dr podcast.
