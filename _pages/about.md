@@ -15,7 +15,7 @@ I am Sahar, a PhD candidate at [CISPA Helmholtz Center for Information Security]
 I am interested in the broad intersection of machine learning with security, safety, and sociopolitical aspects. This includes the following areas: 1) Understanding and mitigating the failure modes of machine learning models, their biases, and their misuse scenarios. 2) How machine learning models could amplify or help counter existing societal and safety problems (e.g., misinformation, biases, and stereotypes). 3) Emergent challenges posed by new foundation and large language models.
 
 ## What's new?
-- May'23: Our talk title "Compromising LLMs: The Advent of AI Malware" got accepted in [Black HAT USA 2023](https://www.blackhat.com/us-23/briefings/schedule/index.html#compromising-llms-the-advent-of-ai-malware-33075)!
+- May'23: Our talk titled "Compromising LLMs: The Advent of AI Malware" got accepted in [Black HAT USA 2023](https://www.blackhat.com/us-23/briefings/schedule/index.html#compromising-llms-the-advent-of-ai-malware-33075)!
 - May'23: We added a major update to our LLM-integrated applications paper with new attacks and exploits on real-world systems.
 - Feb'23: We released a [technical report](https://arxiv.org/abs/2302.12173) on the security assessment of LLM-integrated applications
 
