@@ -5,5 +5,4 @@ authors: 'Kai Greshake*, Sahar Abdelnabi*, Shailesh Mishra, Christoph Endres, Th
 venue: "Arxiv'23"
 code: 'https://github.com/greshake/llm-security'
 paperurl: 'https://arxiv.org/abs/2302.12173'
-comment: *:Equal contribution 
 ---
