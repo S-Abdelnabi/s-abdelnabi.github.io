@@ -25,4 +25,5 @@ author_profile: true
 
 ## Media Coverage
 * Our work on ``indirect prompt injection'' has been featured in [Vice](https://www.vice.com/en/article/7kxzzz/hackers-bing-ai-scammer), [Wired](https://www.wired.com/story/chatgpt-jailbreak-generative-ai-hacking), [Zeit](https://www.wired.com/story/chatgpt-prompt-injection-attack-security/), [MIT Technology Review](https://www.technologyreview.com/2023/04/03/1070893/three-ways-ai-chatbots-are-a-security-disaster), and others. 
-* ["Deepfakes and Fingerprinting"](https://cispa.de/en/deepfakes), CISPA tl;dr podcast.
+* I talked to ["Y-Kollektiv"](https://www.youtube.com/watch?v=9XPGRdZSuzE&t=1280s&ab_channel=Y-Kollektiv) about ChatGPT misinformation risks and new indirect prompting threats in the documentary: *ChatGPT: What happens when the AI takes over* 
+* I talked to ["CISPA tl;dr podcast"](https://cispa.de/en/deepfakes) about our work on Deepfakes and Fingerprinting. 
