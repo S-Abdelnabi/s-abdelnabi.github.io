@@ -14,7 +14,7 @@ I am Sahar, a PhD candidate at [CISPA Helmholtz Center for Information Security]
 
 I am interested in the broad intersection of machine learning with security, safety, and sociopolitical aspects. This includes the following areas: 1) Understanding and mitigating the failure modes of machine learning models, their biases, and their misuse scenarios. 2) How machine learning models could amplify or help counter existing societal and safety problems (e.g., misinformation, biases, and stereotypes). 3) Emergent challenges posed by new foundation and large language models.
 
-**I am actively looking for PostDoc and research scientist positions, hoping to start in 2024**. If you see a good fit, I would appreciate it if you would get in touch!
+**I am actively looking for PostDoc and/or research scientist positions, hoping to start in 2024**. If you see a good fit, I would appreciate it if you would get in touch!
 
 ## What's new? (starting from 2023)
 - Aug'23: Our paper [Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection](https://arxiv.org/abs/2302.12173) got accepted in AISec'23 workshop
