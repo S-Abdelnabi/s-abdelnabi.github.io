@@ -17,6 +17,7 @@ I am interested in the broad intersection of machine learning with security, saf
 **I am actively looking for PostDoc and/or research scientist positions, hoping to start in 2024**. If you see a good fit, I would appreciate it if you would get in touch!
 
 ## What's new? (starting from 2023)
+- Nov'23: We are organizing a competition in SatML'24 on LLM secruity and prompt injection and extraction. The competition is live now: https://ctf.spylab.ai/ 
 - Sep'23: A new [paper](https://arxiv.org/abs/2309.17234) on evaluating LLMs as negotiation agents is online. 
 - Aug'23: Our paper [Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection](https://arxiv.org/abs/2302.12173) got accepted in AISec'23 workshop!
 - May'23: Our talk titled "Compromising LLMs: The Advent of AI Malware" got accepted in [Black HAT USA 2023](https://www.blackhat.com/us-23/briefings/schedule/index.html#compromising-llms-the-advent-of-ai-malware-33075)!
