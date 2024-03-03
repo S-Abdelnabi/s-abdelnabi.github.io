@@ -10,13 +10,15 @@ redirect_from:
 
 Hi!
 
-I am Sahar, a PhD candidate at [CISPA Helmholtz Center for Information Security](https://cispa.de/en), supervised by [Prof. Dr. Mario Fritz](https://cispa.saarland/group/fritz/). Previously, I obtained my MSc degree at [Saarland University](https://www.uni-saarland.de/en/home.html). 
+I am an AI security researcher at Microsoft Security Response Center. Previously, I was a PhD candidate at [CISPA Helmholtz Center for Information Security](https://cispa.de/en), supervised by [Prof. Dr. Mario Fritz](https://cispa.saarland/group/fritz/). Previously, I obtained my MSc degree at [Saarland University](https://www.uni-saarland.de/en/home.html). 
 
-I am interested in the broad intersection of machine learning with security, safety, and sociopolitical aspects. This includes the following areas: 1) Understanding and mitigating the failure modes of machine learning models, their biases, and their misuse scenarios. 2) How machine learning models could amplify or help counter existing societal and safety problems (e.g., misinformation, biases, and stereotypes). 3) Emergent challenges posed by new foundation and large language models.
+I am interested in the broad intersection of machine learning with security, safety, and sociopolitical aspects. This includes the following areas: 1) Understanding and mitigating the failure modes of machine learning models, their biases, and their misuse scenarios. 2) How machine learning models could amplify or help counter existing societal and safety problems (e.g., misinformation, biases, stereotypes, cybersecurity risks, etc.). 3) Emergent challenges posed by new foundation and large language models.
 
 ## What's new? (starting from 2023)
-- Dec'23: Our paper [Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection](https://arxiv.org/abs/2302.12173) recieved the best paper award at AISec workshop! 
-- Nov'23: We are organizing a competition in SatML'24 on LLM secruity and prompt injection and extraction. The competition is live now: https://ctf.spylab.ai/ 
+- Feb'24: I started a new position at Microsoft Research Cambridge!
+- Dec'23: Our paper [Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection](https://arxiv.org/abs/2302.12173) received the best paper award at AISec'23 workshop! 
+- Nov'23: We are organizing a competition in SatML'24 on LLM security and prompt injection and extraction. The competition is live now: https://ctf.spylab.ai/
+- Sep'23: I am serving as a PC member for SatML'24
 - Sep'23: A new [paper](https://arxiv.org/abs/2309.17234) on evaluating LLMs as negotiation agents is online. 
 - Aug'23: Our paper [Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection](https://arxiv.org/abs/2302.12173) got accepted in AISec'23 workshop!
 - May'23: Our talk titled "Compromising LLMs: The Advent of AI Malware" got accepted in [Black HAT USA 2023](https://www.blackhat.com/us-23/briefings/schedule/index.html#compromising-llms-the-advent-of-ai-malware-33075)!
