@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Sahar Abdelnabi"
 title_separator          : "-"
 name                     : &name "Sahar Abdelnabi"
-description              : &description "PhD Candidate at CISPA"
+description              : &description "AI security researcher at Microsoft"
 url                      : https://s-abdelnabi.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "s-abdelnabi.github.io"
@@ -83,11 +83,11 @@ author:
   name             : # "Sahar Abdelnabi"
   avatar           : "photo.jpg"
   bio              : 
-  location         : "Saarbrücken, Germany"
+  location         : "Cambridge, UK"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.de/citations?user=QEiYbDYAAAAJ&hl=en"
-  email            : sahar.abdelnabi@cispa.de
+  email            : saabdelnabi @ microsoft.com
   uri              :
   bitbucket        :
   codepen          :
@@ -108,7 +108,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "AbdelnabiSahar"
+  twitter          : "sahar_abdelnabi"
   vine             :
   weibo            :
   xing             :
