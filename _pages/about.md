@@ -10,12 +10,12 @@ redirect_from:
 
 Hi!
 
-I am an AI security researcher at Microsoft Security Response Center. Previously, I was a PhD candidate at [CISPA Helmholtz Center for Information Security](https://cispa.de/en), supervised by [Prof. Dr. Mario Fritz](https://cispa.saarland/group/fritz/). Previously, I obtained my MSc degree at [Saarland University](https://www.uni-saarland.de/en/home.html). 
+I am an AI security researcher at Microsoft Security Response Center. Previously, I was a PhD candidate at [CISPA Helmholtz Center for Information Security](https://cispa.de/en), supervised by [Prof. Dr. Mario Fritz](https://cispa.saarland/group/fritz/) and I obtained my MSc degree at [Saarland University](https://www.uni-saarland.de/en/home.html). 
 
 I am interested in the broad intersection of machine learning with security, safety, and sociopolitical aspects. This includes the following areas: 1) Understanding and mitigating the failure modes of machine learning models, their biases, and their misuse scenarios. 2) How machine learning models could amplify or help counter existing societal and safety problems (e.g., misinformation, biases, stereotypes, cybersecurity risks, etc.). 3) Emergent challenges posed by new foundation and large language models.
 
 ## What's new? (starting from 2023)
-- Feb'24: I started a new position at Microsoft Research Cambridge!
+- Feb'24: I started a new position at Microsoft Security Response Center at Microsoft Research Cambridge!
 - Dec'23: Our paper [Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection](https://arxiv.org/abs/2302.12173) received the best paper award at AISec'23 workshop! 
 - Nov'23: We are organizing a competition in SatML'24 on LLM security and prompt injection and extraction. The competition is live now: https://ctf.spylab.ai/
 - Sep'23: I am serving as a PC member for SatML'24
