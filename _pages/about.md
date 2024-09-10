@@ -17,7 +17,7 @@ I am interested in the broad intersection of machine learning with security, saf
 *I am always open to collaboration!! please reach out if you see an overlapping interest*
 
 ## What's new? (starting from 2023)
-- We are organizing a challenge at SaTML'25 on [**prompt injection**](https://github.com/microsoft/llmail-inject/), Please participate!! 
+- We are organizing a challenge at SaTML'25 on [**prompt injection**](https://microsoft.github.io/llmail-inject/), full details soon! 
 - Sep'24: I am serving as a PC member for USENIX Security'25
 - Jun'24: We released [**TaskTracker**](https://arxiv.org/abs/2406.00799) paper and toolkit on detecting prompt injection based on models' activations. 
 - Feb'24: I started a new position at Microsoft Security Response Center at Microsoft Research Cambridge!
