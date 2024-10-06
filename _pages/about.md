@@ -17,6 +17,7 @@ I am interested in the broad intersection of machine learning with security, saf
 *I am always open to collaboration!! please reach out if you see an overlapping interest*
 
 ## What's new? (starting from 2023)
+- Sep'24: Two papers accepted at NeurIPS D&B! [**Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation**](https://arxiv.org/abs/2309.17234) and [**Dataset and Lessons Learned from the 2024 SaTML LLM Capture-the-Flag Competition**](https://arxiv.org/abs/2406.07954)
 - We are organizing a challenge at SaTML'25 on [**prompt injection**](https://microsoft.github.io/llmail-inject/), full details soon! 
 - Sep'24: I am serving as a PC member for USENIX Security'25
 - Jun'24: We released [**TaskTracker**](https://arxiv.org/abs/2406.00799) paper and toolkit on detecting prompt injection based on models' activations. 
