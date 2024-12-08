@@ -14,7 +14,7 @@ I am an AI security researcher at Microsoft Security Response Center. Previously
 
 I am interested in the broad intersection of machine learning with security, safety, and sociopolitical aspects. This includes the following areas: 1) Understanding, probing, and mitigating the failure modes of machine learning models, their biases, and their misuse scenarios. 2) How machine learning models could amplify or help counter existing societal and safety problems (e.g., misinformation, biases, stereotypes, cybersecurity risks, etc.). 3) Emergent safety challenges posed by new foundation and large language models. 
 
-**I am on the academic job markert**. If you think my background and research is a good fit, please reach out! I will be at NeurIPS and will be glad to talk about openings and/or collaborations. 
+**I am on the academic job markert**. If you think my background is a good fit, please reach out! I will be at NeurIPS and will be glad to talk about openings and/or collaborations. 
 
 
 ## What's new? (starting from 2023)
