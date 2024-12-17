@@ -5,4 +5,5 @@ authors: 'Kai Greshake*, Sahar Abdelnabi*, Shailesh Mishra, Christoph Endres, Th
 venue: AISec'23 workshop (co-located with CCS)
 code: 'https://github.com/greshake/llm-security'
 paperurl: 'https://arxiv.org/abs/2302.12173'
+note: Oral presentation. Best Paper Award. 
 ---
