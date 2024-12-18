@@ -14,10 +14,11 @@ I am an AI security researcher at Microsoft Security Response Center. Previously
 
 I am interested in the broad intersection of machine learning with security, safety, and sociopolitical aspects. This includes the following areas: 1) Understanding, probing, and mitigating the failure modes of machine learning models, their biases, and their misuse scenarios. 2) How machine learning models could amplify or help counter existing societal and safety problems (e.g., misinformation, biases, stereotypes, cybersecurity risks, etc.). 3) Emergent safety challenges posed by new foundation and large language models. 
 
-**I am on the academic job markert**. If you think my background is a good fit, please reach out! I will be at NeurIPS and will be glad to talk about openings and/or collaborations. 
+**I am on the academic job markert**. If you think my background is a good fit, please reach out! 
 
 
 ## What's new? (starting from 2023)
+- Dec'24: [TaskTracker](https://arxiv.org/abs/2406.00799) is now accepted at SaTML'25!
 - Dec'24: Our [LLMail-Inject](https://microsoft.github.io/llmail-inject/) competition is online! The challenge starts on 9/12/2024.
 - Sep'24: Two papers accepted at NeurIPS D&B! [Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation](https://arxiv.org/abs/2309.17234) and [Dataset and Lessons Learned from the 2024 SaTML LLM Capture-the-Flag Competition](https://arxiv.org/abs/2406.07954)
 - We are organizing a challenge at SaTML'25 on [prompt injection](https://microsoft.github.io/llmail-inject/), full details soon! 
