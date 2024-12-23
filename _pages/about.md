@@ -18,6 +18,7 @@ I am interested in the broad intersection of machine learning with security, saf
 
 
 ## What's new? (starting from 2023)
+- Dec'24: I have successfully defended my PhD! 
 - Dec'24: [TaskTracker](https://arxiv.org/abs/2406.00799) is now accepted at SaTML'25!
 - Dec'24: Our [LLMail-Inject](https://microsoft.github.io/llmail-inject/) competition is online! The challenge starts on 9/12/2024.
 - Sep'24: Two papers accepted at NeurIPS D&B! [Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation](https://arxiv.org/abs/2309.17234) and [Dataset and Lessons Learned from the 2024 SaTML LLM Capture-the-Flag Competition](https://arxiv.org/abs/2406.07954)
