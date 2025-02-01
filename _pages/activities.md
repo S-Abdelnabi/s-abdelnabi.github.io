@@ -6,8 +6,10 @@ author_profile: true
 ---
 
 ## Program Committe 
+* CCS'25
 * USENIX Security'25
 * AAAI'25
+* SaTML'24
 * AISec'23, AISec'24
   
 
@@ -24,7 +26,14 @@ author_profile: true
 * ["Machine Learning in Cybersecurity"](https://cms.cispa.saarland/mlcysecws2122/) course at Saarland University - Teaching assistant - WS 2021/2022.
 * ["High Level Computer Vision"](https://cms.sic.saarland/hlcvss20/) course at Saarland University - Teaching assistant -  SS 2020.
 
+## Competitions 
+* Co-organized [LLM CtF](https://ctf.spylab.ai/)
+* One of the main organizers of [llmailinject](https://llmailinject.azurewebsites.net/)
+
 ## Talks
+* "On the Security of Real-World LLM-Integrated Applications", invited talk at [European Symposium on Security and Artificial Intelligence](https://essai-conference.eu/), 2024
+* "On New Security and Safety Challenges Posed by LLMs and How to Evaluate Them", invited keynote at [HIDA PhD meet up](https://www.helmholtz-hida.de/en/hida-news/get-connected/), 2024
+* "On Evaluating Language Models and Their Security and Safety Implications", ETH Zurich and Vector Institute, 2023
 * "Compromising LLMs: The Advent of AI Malware" at Black Hat USA, 2023. 
 * "How to Improve Automated Fact-Checking?" at Max Planck Institute for Software Systems, 2022. 
 * ["Multi-modal Fact-checking: Out-of-Context Images and How to Catch Them"](https://www.youtube.com/watch?v=JKwRA-PM4xI&ab_channel=UCLInformationSecurityResearchGroup) at UCL Information Security seminars, 2022.
