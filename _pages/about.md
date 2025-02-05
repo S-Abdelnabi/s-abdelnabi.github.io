@@ -18,6 +18,7 @@ I am interested in the broad intersection of machine learning with security, saf
 
 
 ## What's new? (starting from 2023)
+- Feb'25: A new paper [Firewalls to Secure Dynamic LLM Agentic Networks](https://arxiv.org/abs/2502.01822) is now online ([Twitter thread](https://x.com/sahar_abdelnabi/status/1887216242668241126))
 - Jan'25: Our paper [Can LLMs Separate Instructions From Data? And What Do We Even Mean By That?](https://arxiv.org/abs/2403.06833) is accepted at ICLR'25
 - Dec'24: I have successfully defended my PhD! 
 - Dec'24: [TaskTracker](https://arxiv.org/abs/2406.00799) is now accepted at SaTML'25!
