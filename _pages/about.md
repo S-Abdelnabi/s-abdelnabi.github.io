@@ -10,7 +10,7 @@ redirect_from:
 
 Hi!
 
-I am an AI security researcher at Microsoft Security Response Center. Previously, I was a PhD candidate at [CISPA Helmholtz Center for Information Security](https://cispa.de/en), supervised by [Prof. Dr. Mario Fritz](https://cispa.saarland/group/fritz/) and I obtained my MSc degree at [Saarland University](https://www.uni-saarland.de/en/home.html). 
+I am an AI security researcher at Microsoft. Previously, I completed my PhD at [CISPA Helmholtz Center for Information Security](https://cispa.de/en), advised by [Prof. Dr. Mario Fritz](https://cispa.saarland/group/fritz/), and I obtained my MSc degree at [Saarland University](https://www.uni-saarland.de/en/home.html). 
 
 I am interested in the broad intersection of machine learning with security, safety, and sociopolitical aspects. This includes the following areas: 1) Understanding, probing, and mitigating the failure modes of machine learning models, their biases, and their misuse scenarios. 2) How machine learning models could amplify or help counter existing societal and safety problems (e.g., misinformation, biases, stereotypes, cybersecurity risks, etc.). 3) Emergent safety challenges posed by new foundation and large language models. 
 
