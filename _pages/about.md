@@ -14,10 +14,10 @@ I am an AI security researcher at Microsoft. Previously, I completed my PhD at [
 
 I am interested in the broad intersection of machine learning with security, safety, and sociopolitical aspects. This includes the following areas: 1) Understanding, probing, and mitigating the failure modes of machine learning models, their biases, and their misuse scenarios. 2) How machine learning models could amplify or help counter existing societal and safety problems (e.g., misinformation, biases, stereotypes, cybersecurity risks, etc.). 3) Emergent safety challenges posed by new foundation and large language models. 
 
-**I am on the academic job market for faculty positions**. If you think my background is a good fit, please reach out! 
-
 
 ## What's new? (starting from 2023)
+- May'25: A paper ([A Theory of Response Sampling in LLMs: Part Descriptive and Part Prescriptive
+](https://arxiv.org/abs/2402.11005)) is accepted at ACL (main conference)
 - Feb'25: A new paper [Safety is Essential for Responsible Open-Ended Systems](https://arxiv.org/abs/2502.04512) is now online ([Twitter thread](https://x.com/sahar_abdelnabi/status/1889007080679338174))
 - Feb'25: A new paper [Firewalls to Secure Dynamic LLM Agentic Networks](https://arxiv.org/abs/2502.01822) is now online ([Twitter thread](https://x.com/sahar_abdelnabi/status/1887216242668241126))
 - Jan'25: Our paper [Can LLMs Separate Instructions From Data? And What Do We Even Mean By That?](https://arxiv.org/abs/2403.06833) is accepted at ICLR'25
