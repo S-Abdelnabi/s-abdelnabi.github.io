@@ -31,6 +31,10 @@ author_profile: true
 * One of the main organizers of [llmailinject](https://llmailinject.azurewebsites.net/)
 
 ## Talks
+* Invited talk at Brave on agent security, 2025
+* Invited talk at a Google DeepMind reading group on agent security, 2025
+* Invited talk at UMass Amherst Security & Privacy seminars, 2025
+* Invited panelist at [Women in AI Security Workshop](https://www.turing.ac.uk/events/women-ai-security-workshop-0), 2025
 * "On the Security of Real-World LLM-Integrated Applications", invited talk at [European Symposium on Security and Artificial Intelligence](https://essai-conference.eu/), 2024
 * "On New Security and Safety Challenges Posed by LLMs and How to Evaluate Them", invited keynote at [HIDA PhD meet up](https://www.helmholtz-hida.de/en/hida-news/get-connected/), 2024
 * "On Evaluating Language Models and Their Security and Safety Implications", ETH Zurich and Vector Institute, 2023
