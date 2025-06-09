@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahar Abdelnabi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background-color: #fafafa;
+            scroll-behavior: smooth;
+        }
+
+        .nav-banner {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: clamp(15px, 4vw, 40px);
+            padding: 0 20px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: clamp(0.85rem, 2vw, 1rem);
+            padding: clamp(6px, 1.5vw, 10px) clamp(12px, 3vw, 20px);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.1);
+            white-space: nowrap;
+        }
+
+        .nav-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 30px;
+            display: block;
+            border: 4px solid #e6f3ff;
+            box-shadow: 0 8px 32px rgba(59, 130, 246, 0.15);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            color: #059669;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-links a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background-color: #eff6ff;
+            transition: all 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            background-color: #3b82f6;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1e40af;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #10b981;
+            padding-bottom: 10px;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #374151;
+            text-align: justify;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #a7f3d0 0%, #34d399 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .news-item {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            border-left: 4px solid #3b82f6;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .news-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-date {
+            font-weight: 600;
+            color: #059669;
+            font-size: 0.95rem;
+        }
+
+        .news-content {
+            margin-top: 8px;
+            color: #4b5563;
+        }
+
+        .news-content a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .news-content a:hover {
+            text-decoration: underline;
+        }
+
+        .publication {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #10b981;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .publication:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .pub-title {
+            font-weight: 600;
+            color: #1e40af;
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .pub-authors {
+            color: #6b7280;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+
+        .pub-venue {
+            color: #059669;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .pub-links {
+            margin-top: 10px;
+        }
+
+        .pub-links a {
+            display: inline-block;
+            padding: 4px 12px;
+            margin-right: 8px;
+            margin-top: 5px;
+            background-color: #f0f9ff;
+            color: #3b82f6;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .pub-links a:hover {
+            background-color: #3b82f6;
+            color: white;
+        }
+
+        .experience-item {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #f59e0b;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .exp-title {
+            font-weight: 600;
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+
+        .exp-org {
+            color: #059669;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .exp-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .exp-desc {
+            color: #4b5563;
+            line-height: 1.6;
+        }
+
+        .research-areas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .research-tag {
+            background: linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 100%);
+            color: #5b21b6;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+
+            .nav-container {
+                gap: 10px;
+                padding: 0 15px;
+            }
+
+            .nav-link {
+                font-size: 0.8rem;
+                padding: 6px 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                gap: 8px;
+                padding: 0 10px;
+            }
+
+            .nav-link {
+                font-size: 0.75rem;
+                padding: 5px 8px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .nav-container {
+                gap: 50px;
+            }
+
+            .nav-link {
+                font-size: 1.05rem;
+                padding: 12px 24px;
+            }
+        }
+
+        .award-highlight {
+            background: linear-gradient(120deg, #fef3c7 0%, #f59e0b 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #92400e;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Banner -->
+    <div class="nav-banner">
+        <div class="nav-container">
+            <a href="#publications" class="nav-link">Publications</a>
+            <a href="#media" class="nav-link">Media</a>
+            <a href="#service" class="nav-link">Service</a>
+            <a href="#talks" class="nav-link">Talks</a>
+            <a href="#experience" class="nav-link">Experience</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="https://via.placeholder.com/200x200/e6f3ff/3b82f6?text=SaharA" alt="Sahar Abdelnabi" class="profile-image">
+            <h1>Sahar Abdelnabi</h1>
+            <div class="title">AI Security Researcher at Microsoft</div>
+            <div class="contact-links">
+                <a href="mailto:sahar.s.abdelnabi@gmail.com">Email</a>
+                <a href="https://scholar.google.de/citations?user=QEiYbDYAAAAJ&hl=en">Google Scholar</a>
+                <a href="https://github.com/S-Abdelnabi">GitHub</a>
+                <a href="https://s-abdelnabi.github.io/files/CV_SaharAbdelnabi.pdf">CV</a>
+                <a href="https://twitter.com/sahar_abdelnabi">Twitter</a>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <div class="intro">
+                Hi! I am an <span class="highlight">AI security researcher at Microsoft</span>. Previously, I completed my PhD at CISPA Helmholtz Center for Information Security, advised by Prof. Dr. Mario Fritz, and I obtained my MSc degree at Saarland University.
+                <br><br>
+                I am interested in the intersection of AI with security, safety, and sociopolitical aspects. This includes the following areas: 1) Understanding, probing, and evaluating the failure modes of AI models, their biases, emergent risks, and their misuse scenarios. 2) How to design mitigations, system defenses, white-box control methods, and reasoning enhancements to counter such risks. 3) Leveraging AI agents for scientific discovery and advancing our society.
+                <br><br>
+                <span class="highlight">Our previous work, in 2023, was the first to identify the indirect prompt injection vulnerability in LLM-integrated applications, and in 2020, to propose and call for watermarking generative AI.</span>
+            </div>
+            
+            <div class="research-areas">
+                <div class="research-tag">AI Security</div>
+                <div class="research-tag">LLM Safety</div>
+                <div class="research-tag">Prompt Injection</div>
+                <div class="research-tag">Machine Learning Security</div>
+                <div class="research-tag">Adversarial ML</div>
+                <div class="research-tag">AI Ethics</div>
+            </div>
+        </div>
+
+        <!-- News Section -->
+        <div class="section" id="news">
+            <h2>Recent News</h2>
+            
+            <div class="news-item">
+                <div class="news-date">May 2025</div>
+                <div class="news-content">
+                    A paper <a href="https://arxiv.org/abs/2402.11005">"A Theory of Response Sampling in LLMs: Part Descriptive and Part Prescriptive"</a> is accepted at ACL (main conference)
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">February 2025</div>
+                <div class="news-content">
+                    New paper <a href="https://arxiv.org/abs/2502.04512">"Safety is Essential for Responsible Open-Ended Systems"</a> is now online (<a href="https://x.com/sahar_abdelnabi/status/1889007080679338174">Twitter thread</a>)
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">February 2025</div>
+                <div class="news-content">
+                    New paper <a href="https://arxiv.org/abs/2502.01822">"Firewalls to Secure Dynamic LLM Agentic Networks"</a> is now online (<a href="https://x.com/sahar_abdelnabi/status/1887216242668241126">Twitter thread</a>)
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">January 2025</div>
+                <div class="news-content">
+                    Our paper <a href="https://arxiv.org/abs/2403.06833">"Can LLMs Separate Instructions From Data? And What Do We Even Mean By That?"</a> is accepted at ICLR'25
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">December 2024</div>
+                <div class="news-content">
+                    <span class="award-highlight">Successfully defended my PhD with grade: Summa cum laude!</span>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">December 2024</div>
+                <div class="news-content">
+                    <a href="https://arxiv.org/abs/2406.00799">TaskTracker</a> is now accepted at SaTML'25!
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">December 2023</div>
+                <div class="news-content">
+                    Our paper <a href="https://arxiv.org/abs/2302.12173">"Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection"</a> received the <span class="award-highlight">best paper award</span> at AISec'23 workshop!
+                </div>
+            </div>
+        </div>
+
+        <!-- Selected Publications -->
+        <div class="section" id="publications">
+            <h2>Selected Publications</h2>
+            <p style="margin-bottom: 25px; color: #6b7280;">For the full list, please refer to my <a href="https://scholar.google.de/citations?user=QEiYbDYAAAAJ&hl=en" style="color: #3b82f6; text-decoration: none; font-weight: 500;">Google Scholar</a> page.</p>
+
+            <div class="publication">
+                <div class="pub-title">A Theory of Response Sampling in LLMs: Part Descriptive and Part Prescriptive</div>
+                <div class="pub-authors">Sarath Sivaprasad*, Pramod Kaushik*, Sahar Abdelnabi, and Mario Fritz</div>
+                <div class="pub-venue">ACL (main conference) 2025</div>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2402.11005">Paper</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="pub-title">Get My Drift? Catching LLM Task Drift with Activation Deltas</div>
+                <div class="pub-authors">Sahar Abdelnabi*, Aideen Fay*, Giovanni Cherubin, Ahmed Salem, Mario Fritz, and Andrew Paverd</div>
+                <div class="pub-venue">SaTML 2025</div>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2406.00799">Paper</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="pub-title">Can LLMs Separate Instructions From Data? And What Do We Even Mean By That?</div>
+                <div class="pub-authors">Egor Zverev, Sahar Abdelnabi, Mario Fritz, and Christoph H Lampert</div>
+                <div class="pub-venue">ICLR 2025</div>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2403.06833">Paper</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="pub-title">Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation</div>
+                <div class="pub-authors">Sahar Abdelnabi, Amr Gomaa, Sarath Sivaprasad, Lea Schönherr, and Mario Fritz</div>
+                <div class="pub-venue">NeurIPS Datasets and Benchmarks 2024</div>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2309.17234">Paper</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="pub-title">Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection</div>
+                <div class="pub-authors">Sahar Abdelnabi*, Kai Greshake*, Shailesh Mishra, Christoph Endres, Thorsten Holz, and Mario Fritz</div>
+                <div class="pub-venue">AISec Workshop, CCS 2023 🏆 Best Paper Award</div>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2302.12173">Paper</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="pub-title">Fact-Saboteurs: A Taxonomy of Evidence Manipulation Attacks against Fact-Verification Systems</div>
+                <div class="pub-authors">Sahar Abdelnabi and Mario Fritz</div>
+                <div class="pub-venue">USENIX Security 2023</div>
+                <div class="pub-links">
+                    <a href="#">Paper</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="pub-title">Open-Domain, Content-based, Multi-modal Fact-checking of Out-of-Context Images via Online Resources</div>
+                <div class="pub-authors">Sahar Abdelnabi, Rakibul Hasan, and Mario Fritz</div>
+                <div class="pub-venue">CVPR 2022</div>
+                <div class="pub-links">
+                    <a href="#">Paper</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="pub-title">Adversarial Watermarking Transformer: Towards Tracing Text Provenance with Data Hiding</div>
+                <div class="pub-authors">Sahar Abdelnabi and Mario Fritz</div>
+                <div class="pub-venue">IEEE S&P 2021</div>
+                <div class="pub-links">
+                    <a href="#">Paper</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="pub-title">Visualphishnet: Zero-day phishing website detection by visual similarity</div>
+                <div class="pub-authors">Sahar Abdelnabi, Katharina Krombholz, and Mario Fritz</div>
+                <div class="pub-venue">CCS 2020</div>
+                <div class="pub-links">
+                    <a href="#">Paper</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Media Coverage & Outreach Section -->
+        <div class="section" id="media">
+            <h2>Media Coverage & Outreach</h2>
+            
+            <div class="experience-item">
+                <div class="exp-title">Major Media Interviews & Features</div>
+                <div class="exp-org">Vice, Wired, Zeit, MIT Technology Review</div>
+                <div class="exp-date">2023</div>
+                <div class="exp-desc">
+                    Our work on "indirect prompt injection" has been featured as interviews with myself/authors in Vice, Wired, Zeit, MIT Technology Review, and CISPA communication channels.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">Podcasts & Documentaries</div>
+                <div class="exp-org">Various Media Outlets</div>
+                <div class="exp-date">2022 - 2024</div>
+                <div class="exp-desc">
+                    <strong>AI Saturdays Lagos (2024):</strong> Invited panelist for "Research Cohort - Implementation and Evaluation of a Research Paper"
+                    <br><strong>Y-Kollektiv Documentary (2023):</strong> "ChatGPT: What happens when the AI takes over?"
+                    <br><strong>CyberWire Podcast (2023):</strong> "A dark side to LLMs"
+                    <br><strong>CISPA tl;dr Podcast (2022):</strong> "Deepfakes and Fingerprinting"
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">Industry & Research Blogs</div>
+                <div class="exp-org">Microsoft Security Response Center, Montreal AI Ethics Institute</div>
+                <div class="exp-date">2023 - 2024</div>
+                <div class="exp-desc">
+                    <strong>Microsoft Security Response Center (MSRC) blogs:</strong> "Announcing the Adaptive Prompt Injection Challenge (LLMail-Inject)" and "Announcing the winners of the Adaptive Prompt Injection Challenge (LLMail-Inject)"
+                    <br><strong>Montreal AI Ethics Institute:</strong> Featured work on "LLM-deliberation"
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">Policy & Industry Impact</div>
+                <div class="exp-org">Government & Industry Organizations</div>
+                <div class="exp-date">2023 - Present</div>
+                <div class="exp-desc">
+                    Our work on "indirect prompt injection" has been featured by policymakers and practitioners including the German Federal Office for Information Security, NIST, OWASP, MITRE, Microsoft's AI bug bar, and many others, introducing new terminologies for the entire research and tech fields.
+                </div>
+            </div>
+        </div>
+
+        <!-- Academic Service Section -->
+        <div class="section" id="service">
+            <h2>Academic Service</h2>
+            
+            <div class="experience-item">
+                <div class="exp-title">Program Committee Member</div>
+                <div class="exp-org">Multiple Conferences</div>
+                <div class="exp-date">2023 - 2025</div>
+                <div class="exp-desc">
+                    <strong>Program Committee:</strong> IEEE SaTML'24, AISec'23 and '24 Workshop, USENIX Security'25, AAAI'25, CCS'25
+                    <br><strong>Reviewer:</strong> ICLR'25, ICML'24, ICLR'24, NeurIPS'23, ICML'23 Neural Conversational AI Workshop, ICCV'23, CVPR'23, ECCV'22, CVPR'22, IEEE TPAMI (2024, 2022, 2021), ICLR'21 Workshop on Synthetic Data Generation Quality, Privacy, Bias
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">Competition Organization</div>
+                <div class="exp-org">IEEE SaTML Challenges</div>
+                <div class="exp-date">2024 - 2025</div>
+                <div class="exp-desc">
+                    <strong>Lead Organizer:</strong> IEEE SaTML'25 challenge "LLMail-Inject: Adaptive Prompt Injection Attacks"
+                    <br><strong>Co-organizer:</strong> IEEE SaTML'24 challenge "LLM CtF"
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">Grant Reviewing & Consulting</div>
+                <div class="exp-org">Various Organizations</div>
+                <div class="exp-date">2024 - Present</div>
+                <div class="exp-desc">
+                    <strong>Grant Reviewing:</strong> Cooperative AI
+                    <br><strong>Consulting:</strong> UK AI Safety Institute
+                </div>
+            </div>
+        </div>
+
+        <!-- Talks Section -->
+        <div class="section" id="talks">
+            <h2>Invited Talks & Presentations</h2>
+            
+            <div class="experience-item">
+                <div class="exp-title">Firewalls to Secure Dynamic LLM Agentic Networks</div>
+                <div class="exp-org">Brave, Google DeepMind, Qualcomm</div>
+                <div class="exp-date">2025</div>
+                <div class="exp-desc">
+                    Presenting recent research on securing LLM agent networks across multiple industry venues.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">Panel: Women in AI Security Workshop</div>
+                <div class="exp-org">The Alan Turing Institute</div>
+                <div class="exp-date">2025</div>
+                <div class="exp-desc">
+                    Participated as a panelist discussing diversity and inclusion in AI security research.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">Towards Aligned, Interpretable, and Steerable Safe AI Agents</div>
+                <div class="exp-org">TU Graz, UMass Amherst Security and Privacy Seminar, CISPA, ELLIS Institute</div>
+                <div class="exp-date">2025</div>
+                <div class="exp-desc">
+                    Series of talks on developing safer and more controllable AI agent systems.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">On the Security of Real-World LLM-Integrated Applications</div>
+                <div class="exp-org">European Symposium on Security and Artificial Intelligence</div>
+                <div class="exp-date">2024</div>
+                <div class="exp-desc">
+                    Invited talk on security vulnerabilities in production LLM systems.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">On New Security and Safety Challenges Posed by LLMs</div>
+                <div class="exp-org">HIDA PhD Meet-up (Keynote), MLSec seminars</div>
+                <div class="exp-date">2024</div>
+                <div class="exp-desc">
+                    Keynote presentation on emerging security challenges in large language models and evaluation methodologies.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">Compromising LLMs: The Advent of AI Malware</div>
+                <div class="exp-org">Black Hat USA 2023</div>
+                <div class="exp-date">2023</div>
+                <div class="exp-desc">
+                    Major industry conference presentation on LLM security vulnerabilities and attack vectors.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">On Evaluating Language Models and Their Security Implications</div>
+                <div class="exp-org">Vector Institute, ETH Zürich</div>
+                <div class="exp-date">2023</div>
+                <div class="exp-desc">
+                    Research talks on methodologies for evaluating LLM safety and security properties.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">LLM-Deliberation: Evaluating LLMs with Interactive Multi-Agent Negotiation</div>
+                <div class="exp-org">SIGSEC talk</div>
+                <div class="exp-date">2023</div>
+                <div class="exp-desc">
+                    Presentation on novel evaluation frameworks using multi-agent systems for LLM assessment.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">Panel: Security of Generative AI and Generative AI in Security</div>
+                <div class="exp-org">DIMVA Conference</div>
+                <div class="exp-date">2023</div>
+                <div class="exp-desc">
+                    Invited panelist discussing the dual aspects of generative AI security challenges and applications.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">Multi-modal Fact-checking: Out-of-Context Images</div>
+                <div class="exp-org">UCL Information Security seminars, Max Planck Institute</div>
+                <div class="exp-date">2022</div>
+                <div class="exp-desc">
+                    Research presentations on detecting and countering misinformation through multi-modal approaches.
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="section" id="experience">
+            <h2>Experience</h2>
+            
+            <div class="experience-item">
+                <div class="exp-title">AI Security Researcher</div>
+                <div class="exp-org">Microsoft Security Response Center (MSRC), Microsoft Research Cambridge, UK</div>
+                <div class="exp-date">2024 - Present</div>
+                <div class="exp-desc">
+                    Conducting AI security and safety research. Assessing AI security vulnerabilities reported through Microsoft's AI Bug Bounty program.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">PhD in Computer Science</div>
+                <div class="exp-org">CISPA Helmholtz Center for Information Security, Germany</div>
+                <div class="exp-date">2019 - 2024</div>
+                <div class="exp-desc">
+                    Advisor: Prof. Dr. Mario Fritz. Grade: Summa cum laude. External reviewers: Prof. Dr. Battista Biggio and Prof. Dr. Florian Tramèr.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">Research Assistant</div>
+                <div class="exp-org">Max Planck Institute for Informatics, Germany</div>
+                <div class="exp-date">2017 - 2019</div>
+                <div class="exp-desc">
+                    Advised by Prof. Dr. Andreas Bulling. Research on computer vision and human-computer interaction.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">Quality Assurance Engineer</div>
+                <div class="exp-org">Mentor Graphics (Currently, Siemens EDA), Egypt</div>
+                <div class="exp-date">2013 - 2017</div>
+                <div class="exp-desc">
+                    Software quality assurance and testing for electronic design automation tools.
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2024 Sahar Abdelnabi. Built with passion for AI security research.</p>
+        </div>
+    </div>
+</body>
+</html>
