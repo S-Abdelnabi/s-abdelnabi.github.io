@@ -175,8 +175,9 @@
         }
 
         .positions-icon {
-            font-size: 2.5rem;
-            animation: pulse 2s ease-in-out infinite;
+            width: 60px;
+            height: 60px;
+            flex-shrink: 0;
         }
 
         .positions-title {
@@ -765,7 +766,89 @@
             <div class="positions-highlight">
                 <div class="positions-content">
                     <div class="positions-header">
-                        <div class="positions-icon">🧭</div>
+                        <svg class="positions-icon" width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Outer ring -->
+                            <circle cx="100" cy="100" r="95" fill="none" stroke="#e2e8f0" stroke-width="3"/>
+                            <circle cx="100" cy="100" r="85" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+                            
+                            <!-- AI-Human Network in background -->
+                            <g opacity="0.4">
+                                <!-- Network connections -->
+                                <g stroke="#3b82f6" stroke-width="1.5" fill="none" opacity="0.6">
+                                    <path d="M65 55 Q100 40 135 55" stroke-dasharray="3,2"/>
+                                    <path d="M65 145 Q100 160 135 145" stroke-dasharray="3,2"/>
+                                    <path d="M55 65 Q40 100 55 135" stroke-dasharray="3,2"/>
+                                    <path d="M145 65 Q160 100 145 135" stroke-dasharray="3,2"/>
+                                    
+                                    <path d="M65 55 L100 100" stroke="#10b981" stroke-width="1"/>
+                                    <path d="M135 55 L100 100" stroke="#10b981" stroke-width="1"/>
+                                    <path d="M65 145 L100 100" stroke="#10b981" stroke-width="1"/>
+                                    <path d="M135 145 L100 100" stroke="#10b981" stroke-width="1"/>
+                                </g>
+                                
+                                <!-- AI Agents -->
+                                <g fill="#3b82f6" stroke="#2563eb" stroke-width="0.5">
+                                    <rect x="60" y="50" width="10" height="10" rx="2" fill="#3b82f6"/>
+                                    <circle cx="65" cy="47" r="2" fill="#3b82f6"/>
+                                    <circle cx="63" cy="46" r="0.5" fill="white"/>
+                                    <circle cx="67" cy="46" r="0.5" fill="white"/>
+                                    
+                                    <rect x="130" y="50" width="10" height="10" rx="2" fill="#3b82f6"/>
+                                    <circle cx="135" cy="47" r="2" fill="#3b82f6"/>
+                                    <circle cx="133" cy="46" r="0.5" fill="white"/>
+                                    <circle cx="137" cy="46" r="0.5" fill="white"/>
+                                    
+                                    <rect x="60" y="140" width="10" height="10" rx="2" fill="#3b82f6"/>
+                                    <circle cx="65" cy="137" r="2" fill="#3b82f6"/>
+                                    <circle cx="63" cy="136" r="0.5" fill="white"/>
+                                    <circle cx="67" cy="136" r="0.5" fill="white"/>
+                                    
+                                    <rect x="130" y="140" width="10" height="10" rx="2" fill="#3b82f6"/>
+                                    <circle cx="135" cy="137" r="2" fill="#3b82f6"/>
+                                    <circle cx="133" cy="136" r="0.5" fill="white"/>
+                                    <circle cx="137" cy="136" r="0.5" fill="white"/>
+                                </g>
+                                
+                                <!-- Human nodes -->
+                                <g fill="#10b981" stroke="#059669" stroke-width="0.5">
+                                    <circle cx="45" cy="75" r="3" fill="#10b981"/>
+                                    <path d="M45 78 L45 88 M42 82 L48 82 M45 88 L42 92 M45 88 L48 92" stroke="#10b981" stroke-width="1.5" fill="none"/>
+                                    
+                                    <circle cx="155" cy="75" r="3" fill="#10b981"/>
+                                    <path d="M155 78 L155 88 M152 82 L158 82 M155 88 L152 92 M155 88 L158 92" stroke="#10b981" stroke-width="1.5" fill="none"/>
+                                    
+                                    <circle cx="45" cy="125" r="3" fill="#10b981"/>
+                                    <path d="M45 128 L45 138 M42 132 L48 132 M45 138 L42 142 M45 138 L48 142" stroke="#10b981" stroke-width="1.5" fill="none"/>
+                                    
+                                    <circle cx="155" cy="125" r="3" fill="#10b981"/>
+                                    <path d="M155 128 L155 138 M152 132 L158 132 M155 138 L152 142 M155 138 L158 142" stroke="#10b981" stroke-width="1.5" fill="none"/>
+                                </g>
+                            </g>
+                            
+                            <!-- Main compass rose -->
+                            <g class="rotating">
+                                <path d="M100 20 L110 80 L100 75 L90 80 Z" fill="#1e40af" stroke="#1e3a8a" stroke-width="1"/>
+                                <path d="M100 180 L90 120 L100 125 L110 120 Z" fill="#64748b" stroke="#475569" stroke-width="1"/>
+                                <path d="M180 100 L120 90 L125 100 L120 110 Z" fill="#3b82f6" stroke="#2563eb" stroke-width="1"/>
+                                <path d="M20 100 L80 110 L75 100 L80 90 Z" fill="#64748b" stroke="#475569" stroke-width="1"/>
+                                
+                                <path d="M135 65 L110 85 L115 90 L140 70 Z" fill="#10b981" stroke="#059669" stroke-width="0.5"/>
+                                <path d="M65 65 L90 85 L85 90 L60 70 Z" fill="#10b981" stroke="#059669" stroke-width="0.5"/>
+                                <path d="M135 135 L110 115 L115 110 L140 130 Z" fill="#10b981" stroke="#059669" stroke-width="0.5"/>
+                                <path d="M65 135 L90 115 L85 110 L60 130 Z" fill="#10b981" stroke="#059669" stroke-width="0.5"/>
+                            </g>
+                            
+                            <!-- Center hub -->
+                            <circle cx="100" cy="100" r="15" fill="#1e40af" stroke="white" stroke-width="2"/>
+                            <circle cx="100" cy="100" r="8" fill="white"/>
+                            <circle cx="100" cy="100" r="4" fill="#1e40af" class="pulsing"/>
+                            
+                            <!-- Direction markers -->
+                            <text x="100" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">S</text>
+                            <text x="185" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#3b82f6">A</text>
+                            <text x="100" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#64748b">H</text>
+                            <text x="15" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#64748b">C</text>
+                        </svg>
                         <h2 class="positions-title">Join the COMPASS Research Group!</h2>
                     </div>
                     <div class="positions-description">
@@ -1196,7 +1279,7 @@
 
         <!-- Footer -->
         <div class="footer">
-            <p>© 2024 Sahar Abdelnabi. Built with passion for AI security research.</p>
+            <p>© 2025 Sahar Abdelnabi. Built with passion for AI security research.</p>
         </div>
     </div>
 </body>
