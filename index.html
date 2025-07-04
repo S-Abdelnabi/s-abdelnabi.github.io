@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahar Abdelnabi</title>
+    <title>Sahar Abdelnabi - COMPASS Research Group</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -57,6 +57,161 @@
             transform: translateY(-2px);
         }
 
+        /* COMPASS Research Group Section */
+        .compass-research-box {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 2px solid #e2e8f0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .compass-section {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .compass-logo {
+            width: 120px;
+            height: 120px;
+            flex-shrink: 0;
+        }
+
+        .compass-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .compass-info h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #2c5aa0, #1e3a8a, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+
+        .compass-full-name {
+            font-size: 0.95rem;
+            color: #64748b;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            margin-bottom: 12px;
+        }
+
+        .compass-description {
+            font-size: 1rem;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+
+        .compass-description a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .compass-description a:hover {
+            border-bottom-color: #3b82f6;
+        }
+
+        /* Open Positions Section */
+        .positions-highlight {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #e1f5fe 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            border: 2px solid #f59e0b;
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .positions-highlight a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .positions-highlight a:hover {
+            border-bottom-color: #3b82f6;
+        }
+
+        .positions-highlight::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+            animation: shimmer 4s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+            50% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+        }
+
+        .positions-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .positions-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .positions-icon {
+            font-size: 2.5rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .positions-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1e40af;
+            text-shadow: none;
+        }
+
+        .positions-description {
+            font-size: 1.1rem;
+            color: #374151;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .positions-cta {
+            display: inline-block;
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+        }
+
+        .positions-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+            background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+        }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -68,15 +223,29 @@
             margin-bottom: 60px;
         }
 
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         .profile-image {
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             object-fit: cover;
-            margin: 0 auto 30px;
-            display: block;
             border: 4px solid #e6f3ff;
             box-shadow: 0 8px 32px rgba(59, 130, 246, 0.15);
+            flex-shrink: 0;
+        }
+
+        .profile-text {
+            flex: 1;
+            min-width: 300px;
+            text-align: left;
         }
 
         h1 {
@@ -95,8 +264,8 @@
 
         .contact-links {
             display: flex;
-            justify-content: center;
-            gap: 20px;
+            justify-content: flex-start;
+            gap: 15px;
             flex-wrap: wrap;
             margin-top: 20px;
         }
@@ -109,6 +278,7 @@
             border-radius: 20px;
             background-color: #eff6ff;
             transition: all 0.3s ease;
+            font-size: 0.9rem;
         }
 
         .contact-links a:hover {
@@ -243,7 +413,7 @@
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 12px;
-            border-left: 4px solid #f59e0b;
+            border-left: 4px solid hsl(38, 92%, 50%);
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
 
@@ -294,6 +464,33 @@
             color: #6b7280;
         }
 
+        .award-highlight {
+            background: linear-gradient(120deg, #fef3c7 0%, #f59e0b 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #92400e;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .rotating {
+            animation: rotate 20s linear infinite;
+            transform-origin: center;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1; }
+        }
+        
+        .pulsing {
+            animation: pulse 2s ease-in-out infinite;
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 20px 15px;
@@ -302,10 +499,20 @@
             h1 {
                 font-size: 2rem;
             }
+
+            .profile-section {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .profile-text {
+                text-align: center;
+                min-width: auto;
+            }
             
             .contact-links {
-                flex-direction: column;
-                align-items: center;
+                justify-content: center;
             }
             
             .profile-image {
@@ -322,6 +529,39 @@
                 font-size: 0.8rem;
                 padding: 6px 10px;
             }
+
+            .compass-section {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .compass-logo {
+                width: 90px;
+                height: 90px;
+            }
+
+            .compass-info {
+                min-width: auto;
+            }
+
+            .compass-info h3 {
+                font-size: 1.4rem;
+            }
+
+            .positions-highlight {
+                padding: 20px;
+            }
+
+            .positions-title {
+                font-size: 1.6rem;
+            }
+
+            .positions-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -333,6 +573,18 @@
             .nav-link {
                 font-size: 0.75rem;
                 padding: 5px 8px;
+            }
+
+            .compass-info h2 {
+                font-size: 1.5rem;
+            }
+
+            .compass-full-name {
+                font-size: 0.8rem;
+            }
+
+            .positions-title {
+                font-size: 1.4rem;
             }
         }
 
@@ -346,20 +598,13 @@
                 padding: 12px 24px;
             }
         }
-
-        .award-highlight {
-            background: linear-gradient(120deg, #fef3c7 0%, #f59e0b 100%);
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 600;
-            color: #92400e;
-        }
     </style>
 </head>
 <body>
     <!-- Navigation Banner -->
     <div class="nav-banner">
         <div class="nav-container">
+            <a href="#positions" class="nav-link">Open Positions</a>
             <a href="#publications" class="nav-link">Publications</a>
             <a href="#media" class="nav-link">Media</a>
             <a href="#service" class="nav-link">Service</a>
@@ -368,24 +613,127 @@
         </div>
     </div>
 
+
+
     <div class="container">
         <!-- Header Section -->
         <div class="header">
-            <img src="images/photo.jpg" alt="Sahar Abdelnabi" class="profile-image">
-            <h1>Sahar Abdelnabi</h1>
-            <div class="title">AI Security Researcher at Microsoft</div>
-            <div class="contact-links">
-                <a href="mailto:sahar.s.abdelnabi@gmail.com">Email</a>
-                <a href="https://scholar.google.de/citations?user=QEiYbDYAAAAJ&hl=en">Google Scholar</a>
-                <a href="https://github.com/S-Abdelnabi">GitHub</a>
-                <a href="https://s-abdelnabi.github.io/files/CV_SaharAbdelnabi.pdf">CV</a>
-                <a href="https://twitter.com/sahar_abdelnabi">Twitter</a>
+            <div class="profile-section">
+                <img src="images/photo.jpg" alt="Sahar Abdelnabi" class="profile-image">
+                <div class="profile-text">
+                    <h1>Sahar Abdelnabi</h1>
+                    <div class="title">AI Security Researcher at Microsoft</div>
+                    <div class="contact-links">
+                        <a href="mailto:sahar.s.abdelnabi@gmail.com">Email</a>
+                        <a href="https://scholar.google.de/citations?user=QEiYbDYAAAAJ&hl=en">Google Scholar</a>
+                        <a href="https://github.com/S-Abdelnabi">GitHub</a>
+                        <a href="https://s-abdelnabi.github.io/files/CV_SaharAbdelnabi.pdf">CV</a>
+                        <a href="https://twitter.com/sahar_abdelnabi">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMPASS Research Group Section -->
+        <div class="compass-research-box">
+            <div class="compass-section">
+                <svg class="compass-logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Outer ring -->
+                    <circle cx="100" cy="100" r="95" fill="none" stroke="#e2e8f0" stroke-width="3"/>
+                    <circle cx="100" cy="100" r="85" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+                    
+                    <!-- AI-Human Network in background -->
+                    <g opacity="0.4">
+                        <!-- Network connections -->
+                        <g stroke="#3b82f6" stroke-width="1.5" fill="none" opacity="0.6">
+                            <path d="M65 55 Q100 40 135 55" stroke-dasharray="3,2"/>
+                            <path d="M65 145 Q100 160 135 145" stroke-dasharray="3,2"/>
+                            <path d="M55 65 Q40 100 55 135" stroke-dasharray="3,2"/>
+                            <path d="M145 65 Q160 100 145 135" stroke-dasharray="3,2"/>
+                            
+                            <path d="M65 55 L100 100" stroke="#10b981" stroke-width="1"/>
+                            <path d="M135 55 L100 100" stroke="#10b981" stroke-width="1"/>
+                            <path d="M65 145 L100 100" stroke="#10b981" stroke-width="1"/>
+                            <path d="M135 145 L100 100" stroke="#10b981" stroke-width="1"/>
+                        </g>
+                        
+                        <!-- AI Agents -->
+                        <g fill="#3b82f6" stroke="#2563eb" stroke-width="0.5">
+                            <rect x="60" y="50" width="10" height="10" rx="2" fill="#3b82f6"/>
+                            <circle cx="65" cy="47" r="2" fill="#3b82f6"/>
+                            <circle cx="63" cy="46" r="0.5" fill="white"/>
+                            <circle cx="67" cy="46" r="0.5" fill="white"/>
+                            
+                            <rect x="130" y="50" width="10" height="10" rx="2" fill="#3b82f6"/>
+                            <circle cx="135" cy="47" r="2" fill="#3b82f6"/>
+                            <circle cx="133" cy="46" r="0.5" fill="white"/>
+                            <circle cx="137" cy="46" r="0.5" fill="white"/>
+                            
+                            <rect x="60" y="140" width="10" height="10" rx="2" fill="#3b82f6"/>
+                            <circle cx="65" cy="137" r="2" fill="#3b82f6"/>
+                            <circle cx="63" cy="136" r="0.5" fill="white"/>
+                            <circle cx="67" cy="136" r="0.5" fill="white"/>
+                            
+                            <rect x="130" y="140" width="10" height="10" rx="2" fill="#3b82f6"/>
+                            <circle cx="135" cy="137" r="2" fill="#3b82f6"/>
+                            <circle cx="133" cy="136" r="0.5" fill="white"/>
+                            <circle cx="137" cy="136" r="0.5" fill="white"/>
+                        </g>
+                        
+                        <!-- Human nodes -->
+                        <g fill="#10b981" stroke="#059669" stroke-width="0.5">
+                            <circle cx="45" cy="75" r="3" fill="#10b981"/>
+                            <path d="M45 78 L45 88 M42 82 L48 82 M45 88 L42 92 M45 88 L48 92" stroke="#10b981" stroke-width="1.5" fill="none"/>
+                            
+                            <circle cx="155" cy="75" r="3" fill="#10b981"/>
+                            <path d="M155 78 L155 88 M152 82 L158 82 M155 88 L152 92 M155 88 L158 92" stroke="#10b981" stroke-width="1.5" fill="none"/>
+                            
+                            <circle cx="45" cy="125" r="3" fill="#10b981"/>
+                            <path d="M45 128 L45 138 M42 132 L48 132 M45 138 L42 142 M45 138 L48 142" stroke="#10b981" stroke-width="1.5" fill="none"/>
+                            
+                            <circle cx="155" cy="125" r="3" fill="#10b981"/>
+                            <path d="M155 128 L155 138 M152 132 L158 132 M155 138 L152 142 M155 138 L158 142" stroke="#10b981" stroke-width="1.5" fill="none"/>
+                        </g>
+                    </g>
+                    
+                    <!-- Main compass rose -->
+                    <g class="rotating">
+                        <path d="M100 20 L110 80 L100 75 L90 80 Z" fill="#1e40af" stroke="#1e3a8a" stroke-width="1"/>
+                        <path d="M100 180 L90 120 L100 125 L110 120 Z" fill="#64748b" stroke="#475569" stroke-width="1"/>
+                        <path d="M180 100 L120 90 L125 100 L120 110 Z" fill="#3b82f6" stroke="#2563eb" stroke-width="1"/>
+                        <path d="M20 100 L80 110 L75 100 L80 90 Z" fill="#64748b" stroke="#475569" stroke-width="1"/>
+                        
+                        <path d="M135 65 L110 85 L115 90 L140 70 Z" fill="#10b981" stroke="#059669" stroke-width="0.5"/>
+                        <path d="M65 65 L90 85 L85 90 L60 70 Z" fill="#10b981" stroke="#059669" stroke-width="0.5"/>
+                        <path d="M135 135 L110 115 L115 110 L140 130 Z" fill="#10b981" stroke="#059669" stroke-width="0.5"/>
+                        <path d="M65 135 L90 115 L85 110 L60 130 Z" fill="#10b981" stroke="#059669" stroke-width="0.5"/>
+                    </g>
+                    
+                    <!-- Center hub -->
+                    <circle cx="100" cy="100" r="15" fill="#1e40af" stroke="white" stroke-width="2"/>
+                    <circle cx="100" cy="100" r="8" fill="white"/>
+                    <circle cx="100" cy="100" r="4" fill="#1e40af" class="pulsing"/>
+                    
+                    <!-- Direction markers -->
+                    <text x="100" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">S</text>
+                    <text x="185" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#3b82f6">A</text>
+                    <text x="100" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#64748b">H</text>
+                    <text x="15" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#64748b">C</text>
+                </svg>
+                
+                <div class="compass-info">
+                    <h3>COMPASS Research Group</h3>
+                    <div class="compass-full-name">COoperative Machine intelligence for People-Aligned Safe Systems</div>
+                    <div class="compass-description">
+                        I am joining the <a href="https://institute-tue.ellis.eu/">ELLIS Institute</a> as a Principal Investigator where I will be co-affiliated with the <a href="https://is.mpg.de/">Max-Planck Institute for Intelligent Systems</a> in Tübingen as an independent research group leader. I will found the <span class="highlight">COMPASS research group</span>, focused on developing safe, aligned, and steerable AI agents with emphasis on security, human aspects, and cooperative multi-agent systems. <span class="highlight"><a href="#positions">📢 I will be hiring!</a></span>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- About Section -->
         <div class="section" id="about">
-            <h2>About Me</h2>
+            <h2>About Me</h2> 
             <div class="intro">
                 Hi! I am an <span class="highlight">AI security researcher at Microsoft</span>. Previously, I completed my PhD at CISPA Helmholtz Center for Information Security, advised by Prof. Dr. Mario Fritz, and I obtained my MSc degree at Saarland University.
                 <br><br>
@@ -407,6 +755,32 @@
                 <div class="research-tag">AI Ethics</div>
                 <div class="research-tag">Prompt Injection</div>
                 <div class="research-tag">Multi-agent Safety</div>
+                <div class="research-tag">Cooperative AI</div>
+                <div class="research-tag">Human-AI Interaction</div>
+            </div>
+        </div>
+
+        <!-- Open Positions Section -->
+        <div class="section" id="positions">
+            <div class="positions-highlight">
+                <div class="positions-content">
+                    <div class="positions-header">
+                        <div class="positions-icon">🧭</div>
+                        <h2 class="positions-title">Join the COMPASS Research Group!</h2>
+                    </div>
+                    <div class="positions-description">
+                        You can find my research statement <a href="https://s-abdelnabi.github.io/files/RS_SaharAbdelnabi.pdf">here</a>. If you are interested in these research directions, I would love to hear from you! 
+                        <br><br>
+                        <strong>Open Positions:</strong><br>
+                        • For a <strong>postdoc</strong> position, please send an email with a CV and research statement<br>
+                        • I will admit <strong>PhD students</strong> via the following channels (details to be confirmed):<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• <a href="https://ellis.eu/phd-postdoc">ELLIS PhD program</a><br> 
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• <a href="https://learning-systems.org/">Max Planck & ETH Center for Learning Systems (CLS)</a><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• <a href="https://imprs.is.mpg.de/">International Max Planck Research School for Intelligent Systems (IMPRS-IS)</a><br>
+                        • Research <strong>internships and visits</strong>, please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbFSVsLu76odpxkCa5Ip3LYEUl3sewOLG1OsYyp9RSvH-Hkg/viewform?usp=dialog">this form</a> 
+                        <br><br>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -486,6 +860,15 @@
                 </div>
             </div>
  
+            <div class="publication">
+                <div class="pub-title">Taxonomy, opportunities, and challenges of representation engineering for large language models</div>
+                <div class="pub-authors">Jan Wehner, <strong>Sahar Abdelnabi</strong>, Daniel Tan, David Krueger, Mario Fritz</div>
+                <div class="pub-venue">Arxiv 2025</div>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2502.19649">Paper</a>
+                </div>
+            </div>
+
             <div class="publication">
                 <div class="pub-title">A Theory of Decision Sampling in LLMs: Part Descriptive and Part Prescriptive</div>
                 <div class="pub-authors">Sarath Sivaprasad*, Pramod Kaushik*, <strong>Sahar Abdelnabi</strong>, and Mario Fritz</div>
@@ -604,7 +987,6 @@
                 <div class="exp-org">Various Media Outlets</div>
                 <div class="exp-date">2022 - 2024</div>
                 <div class="exp-desc">
-                    <strong>AI Saturdays Lagos (2024):</strong> Invited panelist for "Research Cohort - Implementation and Evaluation of a Research Paper"
                     <br><strong>Y-Kollektiv Documentary (2023):</strong> "ChatGPT: What happens when the AI takes over?"
                     <br><strong>CyberWire Podcast (2023):</strong> "A dark side to LLMs"
                     <br><strong>CISPA tl;dr Podcast (2022):</strong> "Deepfakes and Fingerprinting"
@@ -668,7 +1050,7 @@
 
         <!-- Talks Section -->
         <div class="section" id="talks">
-            <h2>Invited Talks & Presentations</h2>
+            <h2>Invited Talks & Panels </h2>
             
             <div class="experience-item">
                 <div class="exp-title">Firewalls to Secure Dynamic LLM Agentic Networks</div>
@@ -685,6 +1067,15 @@
                 <div class="exp-date">2025</div>
                 <div class="exp-desc">
                     Participated as a panelist discussing trends, challenges, diversity, and inclusion in AI security research.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-title">Panel: Implementation and Evaluation of a Research Paper</div>
+                <div class="exp-org">AI Saturdays Lagos</div>
+                <div class="exp-date">2024</div>
+                <div class="exp-desc">
+                    Participated as a panelist discussing prescriptives and research experiences.
                 </div>
             </div>
 
