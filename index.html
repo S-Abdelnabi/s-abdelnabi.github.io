@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🧭 Sahar Abdelnabi</title>
+    <title>🧭 Sahar Abdelnabi | COMPASS Research Group</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -16,14 +16,15 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
             color: #2d3748;
-            background-color: #fafafa;
+            background-color: #f8fafc;
             scroll-behavior: smooth;
         }
 
+        /* Navigation */
         .nav-banner {
             background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
             color: white;
-            padding: 15px 0;
+            padding: 12px 0;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -36,201 +37,51 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: clamp(15px, 4vw, 40px);
+            gap: clamp(8px, 2vw, 25px);
             padding: 0 20px;
         }
 
         .nav-link {
-            color: white;
+            color: rgba(255, 255, 255, 0.9);
             text-decoration: none;
             font-weight: 500;
-            font-size: clamp(0.85rem, 2vw, 1rem);
-            padding: clamp(6px, 1.5vw, 10px) clamp(12px, 3vw, 20px);
-            border-radius: 20px;
-            transition: all 0.3s ease;
-            background: rgba(255, 255, 255, 0.1);
+            font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
             white-space: nowrap;
         }
 
         .nav-link:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
         }
 
-        /* COMPASS Research Group Section */
-        .compass-research-box {
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-            border-radius: 16px;
-            padding: 25px;
-            margin-bottom: 30px;
-            border: 2px solid #e2e8f0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        }
-
-        .compass-section {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
-
-        .compass-logo {
-            width: 120px;
-            height: 120px;
-            flex-shrink: 0;
-        }
-
-        .compass-info {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .compass-info h3 {
-            font-size: 1.6rem;
-            font-weight: 700;
-            background: linear-gradient(45deg, #2c5aa0, #1e3a8a, #3b82f6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: 0.05em;
-            margin-bottom: 8px;
-        }
-
-        .compass-full-name {
-            font-size: 0.95rem;
-            color: #64748b;
-            font-weight: 500;
-            letter-spacing: 0.03em;
-            margin-bottom: 12px;
-        }
-
-        .compass-description {
-            font-size: 1rem;
-            color: #4b5563;
-            line-height: 1.6;
-        }
-
-        .compass-description a {
-            color: #3b82f6;
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 2px solid transparent;
-            transition: border-color 0.3s ease;
-        }
-
-        .compass-description a:hover {
-            border-bottom-color: #3b82f6;
-        }
-
-        /* Open Positions Section */
-        .positions-highlight {
-            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #e1f5fe 100%);
-            border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 40px;
-            border: 2px solid #f59e0b;
-            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+        /* Hero Section */
+        .hero {
+            background: #fafafa;
+            color: #2d3748;
+            padding: 60px 20px 50px;
             position: relative;
             overflow: hidden;
         }
 
-        .positions-highlight a {
-            color: #3b82f6;
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 2px solid transparent;
-            transition: border-color 0.3s ease;
+        .hero::before {
+            display: none;
         }
 
-        .positions-highlight a:hover {
-            border-bottom-color: #3b82f6;
-        }
-
-        .positions-highlight::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
-            animation: shimmer 4s ease-in-out infinite;
-        }
-
-        @keyframes shimmer {
-            0%, 100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-            50% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-        }
-
-        .positions-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .positions-header {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-
-        .positions-icon {
-            width: 60px;
-            height: 60px;
-            flex-shrink: 0;
-        }
-
-        .positions-title {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #1e40af;
-            text-shadow: none;
-        }
-
-        .positions-description {
-            font-size: 1.1rem;
-            color: #374151;
-            line-height: 1.7;
-            margin-bottom: 20px;
-        }
-
-        .positions-cta {
-            display: inline-block;
-            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
-            color: white;
-            padding: 12px 25px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-        }
-
-        .positions-cta:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-            background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
-        }
-
-        .container {
-            max-width: 800px;
+        .hero-content {
+            max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
+            position: relative;
+            z-index: 1;
         }
 
-        .header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .profile-section {
+        .hero-top {
             display: flex;
             align-items: center;
-            gap: 40px;
+            gap: 35px;
             margin-bottom: 40px;
-            flex-wrap: wrap;
-            justify-content: center;
         }
 
         .profile-image {
@@ -243,259 +94,460 @@
             flex-shrink: 0;
         }
 
-        .profile-text {
-            flex: 1;
-            min-width: 300px;
-            text-align: left;
-        }
-
-        h1 {
+        .hero-text h1 {
             font-size: 2.5rem;
             font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
             color: #1e40af;
-            margin-bottom: 10px;
         }
 
-        .title {
+        .hero-title {
             font-size: 1.2rem;
             color: #059669;
             font-weight: 500;
             margin-bottom: 20px;
         }
 
-        .contact-links {
+        .hero-links {
             display: flex;
-            justify-content: flex-start;
-            gap: 15px;
+            gap: 12px;
             flex-wrap: wrap;
-            margin-top: 20px;
         }
 
-        .contact-links a {
+        .hero-links a {
             color: #3b82f6;
             text-decoration: none;
             font-weight: 500;
             padding: 8px 16px;
             border-radius: 20px;
             background-color: #eff6ff;
-            transition: all 0.3s ease;
             font-size: 0.9rem;
+            transition: all 0.3s ease;
         }
 
-        .contact-links a:hover {
+        .hero-links a:hover {
             background-color: #3b82f6;
             color: white;
             transform: translateY(-2px);
         }
 
-        .section {
-            margin-bottom: 50px;
+        /* COMPASS Banner */
+        .compass-banner {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 16px;
+            padding: 25px 30px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            border: 2px solid #e2e8f0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
 
-        .section h2 {
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: #1e40af;
-            margin-bottom: 25px;
-            border-bottom: 3px solid #10b981;
-            padding-bottom: 10px;
+        .compass-logo {
+            width: 120px;
+            height: 120px;
+            flex-shrink: 0;
         }
 
-        .intro {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #374151;
-            text-align: justify;
+        .compass-text h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #2c5aa0, #1e3a8a, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
         }
-        .intro a {
+
+        .compass-text .full-name {
+            font-size: 0.95rem;
+            color: #64748b;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            margin-bottom: 12px;
+        }
+
+        .compass-text .description {
+            font-size: 1rem;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+
+        .compass-text a {
             color: #3b82f6;
             text-decoration: none;
             font-weight: 600;
             border-bottom: 2px solid transparent;
             transition: border-color 0.3s ease;
         }
-        
-        .intro a:hover {
+
+        .compass-text a:hover {
+            border-bottom-color: #3b82f6;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section h2::after {
+            content: '';
+            flex: 1;
+            height: 2px;
+            background: linear-gradient(90deg, #10b981 0%, transparent 100%);
+            border-radius: 1px;
+        }
+
+        .prose {
+            font-size: 1.05rem;
+            line-height: 1.85;
+            color: #4a5568;
+        }
+
+        .prose a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid #bfdbfe;
+            transition: border-color 0.2s;
+        }
+
+        .prose a:hover {
             border-bottom-color: #3b82f6;
         }
 
         .highlight {
-            background: linear-gradient(120deg, #a7f3d0 0%, #34d399 100%);
-            padding: 2px 6px;
+            background: linear-gradient(120deg, #c6f6d5 0%, #9ae6b4 100%);
+            padding: 2px 8px;
             border-radius: 4px;
             font-weight: 500;
-        }
-
-        .news-item {
-            background: white;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-radius: 12px;
-            border-left: 4px solid #3b82f6;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-
-        .news-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-        }
-
-        .news-date {
-            font-weight: 600;
-            color: #059669;
-            font-size: 0.95rem;
-        }
-
-        .news-content {
-            margin-top: 8px;
-            color: #4b5563;
-        }
-
-        .news-content a {
-            color: #3b82f6;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .news-content a:hover {
-            text-decoration: underline;
-        }
-
-        .publication {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            border-left: 4px solid #10b981;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-
-        .publication:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-        }
-
-        .pub-title {
-            font-weight: 600;
-            color: #1e40af;
-            font-size: 1.05rem;
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-
-        .pub-authors {
-            color: #6b7280;
-            font-size: 0.95rem;
-            margin-bottom: 5px;
-        }
-
-        .pub-venue {
-            color: #059669;
-            font-weight: 500;
-            font-size: 0.9rem;
-        }
-
-        .pub-links {
-            margin-top: 10px;
-        }
-
-        .pub-links a {
-            display: inline-block;
-            padding: 4px 12px;
-            margin-right: 8px;
-            margin-top: 5px;
-            background-color: #f0f9ff;
-            color: #3b82f6;
-            text-decoration: none;
-            border-radius: 15px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            transition: all 0.2s ease;
-        }
-
-        .pub-links a:hover {
-            background-color: #3b82f6;
-            color: white;
-        }
-
-        .experience-item {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            border-left: 4px solid hsl(38, 92%, 50%);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        }
-
-        .exp-title {
-            font-weight: 600;
-            color: #1e40af;
-            font-size: 1.1rem;
-        }
-
-        .exp-org {
-            color: #059669;
-            font-weight: 500;
-            margin-bottom: 5px;
-        }
-
-        .exp-date {
-            color: #6b7280;
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-        }
-
-        .exp-desc {
-            color: #4b5563;
-            line-height: 1.6;
-        }
-
-        .research-areas {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        .research-tag {
-            background: linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 100%);
-            color: #5b21b6;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 60px;
-            padding-top: 30px;
-            border-top: 1px solid #e5e7eb;
-            color: #6b7280;
+            color: #22543d;
         }
 
         .award-highlight {
-            background: linear-gradient(120deg, #fef3c7 0%, #f59e0b 100%);
-            padding: 2px 6px;
+            background: linear-gradient(120deg, #fef3c7 0%, #fcd34d 100%);
+            padding: 2px 8px;
             border-radius: 4px;
             font-weight: 600;
             color: #92400e;
         }
 
+        /* Research Tags */
+        .research-areas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 25px;
+        }
+
+        .research-tag {
+            background: #edf2f7;
+            color: #2d3748;
+            padding: 10px 18px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+
+        .research-tag:hover {
+            background: #e2e8f0;
+            transform: translateY(-1px);
+        }
+
+        /* Group Section */
+        .group-intro {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            margin-bottom: 30px;
+        }
+
+        .group-intro p {
+            color: #4a5568;
+            line-height: 1.7;
+        }
+
+        .group-intro a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .group-intro a:hover {
+            text-decoration: underline;
+        }
+
+        /* Members List */
+        .members-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .members-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e5e7eb;
+            color: #4a5568;
+            font-size: 1rem;
+        }
+
+        .members-list li:last-child {
+            border-bottom: none;
+        }
+
+        .members-list a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .members-list a:hover {
+            color: #3b82f6;
+            text-decoration: underline;
+        }
+
+        /* Hiring Section */
+        .hiring-content {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        .hiring-content h3 {
+            font-size: 1.3rem;
+            color: #1e40af;
+            margin-bottom: 15px;
+        }
+
+        .hiring-content .intro {
+            color: #4a5568;
+            line-height: 1.8;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .hiring-content a {
+            color: #3b82f6;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .hiring-content a:hover {
+            text-decoration: underline;
+        }
+
+        .hiring-content ul {
+            margin: 15px 0;
+            padding-left: 20px;
+            color: #4a5568;
+        }
+
+        .hiring-content li {
+            padding: 6px 0;
+            line-height: 1.6;
+        }
+
+        .hiring-content .sub-list {
+            margin: 10px 0 10px 10px;
+        }
+
+        /* Cards */
+        .card {
+            background: white;
+            padding: 22px 25px;
+            margin-bottom: 16px;
+            border-radius: 10px;
+            border-left: 4px solid #3b82f6;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+            transition: all 0.2s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transform: translateX(4px);
+        }
+
+        .card.green {
+            border-left-color: #10b981;
+        }
+
+        .card.orange {
+            border-left-color: #f59e0b;
+        }
+
+        .card-date {
+            font-weight: 600;
+            color: #059669;
+            font-size: 0.9rem;
+            margin-bottom: 6px;
+        }
+
+        .card-content {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .card-content a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .card-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Publications */
+        .pub {
+            background: white;
+            padding: 22px 25px;
+            margin-bottom: 16px;
+            border-radius: 10px;
+            border-left: 4px solid #10b981;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+            transition: all 0.2s ease;
+        }
+
+        .pub:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .pub-title {
+            font-weight: 600;
+            color: #1e40af;
+            font-size: 1.02rem;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .pub-authors {
+            color: #718096;
+            font-size: 0.9rem;
+            margin-bottom: 6px;
+        }
+
+        .pub-venue {
+            color: #059669;
+            font-weight: 600;
+            font-size: 0.88rem;
+        }
+
+        .pub-links {
+            margin-top: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .pub-links a {
+            display: inline-block;
+            padding: 5px 14px;
+            background: #eff6ff;
+            color: #3b82f6;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .pub-links-title a {
+            display: inline-block;
+            color: #059669;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .pub-links a:hover {
+            background: #3b82f6;
+            color: white;
+        }
+
+        /* Experience */
+        .exp {
+            background: white;
+            padding: 22px 25px;
+            margin-bottom: 16px;
+            border-radius: 10px;
+            border-left: 4px solid #f59e0b;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+
+        .exp-title {
+            font-weight: 600;
+            color: #1e40af;
+            font-size: 1.05rem;
+            margin-bottom: 4px;
+        }
+
+        .exp-org {
+            color: #059669;
+            font-weight: 500;
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+
+        .exp-date {
+            color: #a0aec0;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+
+        .exp-desc {
+            color: #4a5568;
+            line-height: 1.65;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
         @keyframes rotate {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
         
         .rotating {
-            animation: rotate 20s linear infinite;
+            animation: rotate 25s linear infinite;
             transform-origin: center;
         }
         
         @keyframes pulse {
-            0%, 100% { opacity: 0.8; }
+            0%, 100% { opacity: 0.7; }
             50% { opacity: 1; }
         }
         
@@ -503,49 +555,35 @@
             animation: pulse 2s ease-in-out infinite;
         }
 
+        /* Responsive */
         @media (max-width: 768px) {
-            .container {
-                padding: 20px 15px;
+            .hero {
+                padding: 40px 20px 35px;
             }
-            
-            h1 {
+
+            .hero-top {
+                flex-direction: column;
+                text-align: center;
+                gap: 25px;
+            }
+
+            .hero-text h1 {
                 font-size: 2rem;
             }
 
-            .profile-section {
-                flex-direction: column;
-                gap: 20px;
-                text-align: center;
-            }
-
-            .profile-text {
-                text-align: center;
-                min-width: auto;
-            }
-            
-            .contact-links {
+            .hero-links {
                 justify-content: center;
             }
-            
+
             .profile-image {
                 width: 150px;
                 height: 150px;
             }
 
-            .nav-container {
-                gap: 10px;
-                padding: 0 15px;
-            }
-
-            .nav-link {
-                font-size: 0.8rem;
-                padding: 6px 10px;
-            }
-
-            .compass-section {
+            .compass-banner {
                 flex-direction: column;
                 text-align: center;
-                gap: 15px;
+                padding: 20px;
             }
 
             .compass-logo {
@@ -553,89 +591,61 @@
                 height: 90px;
             }
 
-            .compass-info {
-                min-width: auto;
+            .nav-container {
+                gap: 6px;
             }
 
-            .compass-info h3 {
+            .nav-link {
+                padding: 6px 10px;
+                font-size: 0.75rem;
+            }
+
+            .section h2 {
                 font-size: 1.4rem;
-            }
-
-            .positions-highlight {
-                padding: 20px;
-            }
-
-            .positions-title {
-                font-size: 1.6rem;
-            }
-
-            .positions-header {
-                flex-direction: column;
-                text-align: center;
-                gap: 10px;
             }
         }
 
         @media (max-width: 480px) {
-            .nav-container {
-                gap: 8px;
-                padding: 0 10px;
+            .hero-text h1 {
+                font-size: 1.8rem;
             }
 
-            .nav-link {
-                font-size: 0.75rem;
-                padding: 5px 8px;
-            }
-
-            .compass-info h2 {
-                font-size: 1.5rem;
-            }
-
-            .compass-full-name {
-                font-size: 0.8rem;
-            }
-
-            .positions-title {
+            .compass-text h2 {
                 font-size: 1.4rem;
             }
-        }
-
-        @media (min-width: 1200px) {
-            .nav-container {
-                gap: 50px;
-            }
 
             .nav-link {
-                font-size: 1.05rem;
-                padding: 12px 24px;
+                padding: 5px 8px;
+                font-size: 0.7rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Banner -->
-    <div class="nav-banner">
+    <!-- Navigation -->
+    <nav class="nav-banner">
         <div class="nav-container">
-            <a href="#positions" class="nav-link">Open Positions</a>
+            <a href="#research" class="nav-link">Research</a>
+            <a href="#group" class="nav-link">Group</a>
+            <a href="#hiring" class="nav-link">Hiring</a>
             <a href="#publications" class="nav-link">Publications</a>
+            <a href="#news" class="nav-link">News</a>
             <a href="#media" class="nav-link">Media</a>
             <a href="#service" class="nav-link">Service</a>
             <a href="#talks" class="nav-link">Talks</a>
             <a href="#experience" class="nav-link">Experience</a>
         </div>
-    </div>
+    </nav>
 
-
-
-    <div class="container">
-        <!-- Header Section -->
-        <div class="header">
-            <div class="profile-section">
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-top">
                 <img src="images/photo.jpg" alt="Sahar Abdelnabi" class="profile-image">
-                <div class="profile-text">
+                <div class="hero-text">
                     <h1>Sahar Abdelnabi</h1>
-                    <div class="title">PI at ELLIS Institute Tübingen and MPI-IS</div>
-                    <div class="contact-links">
+                    <div class="hero-title">Principal Investigator at ELLIS Institute Tübingen & MPI-IS</div>
+                    <div class="hero-links">
                         <a href="mailto:sahar.abdelnabi@tue.ellis.eu">Email</a>
                         <a href="https://scholar.google.de/citations?user=QEiYbDYAAAAJ&hl=en">Google Scholar</a>
                         <a href="https://github.com/S-Abdelnabi">GitHub</a>
@@ -644,11 +654,9 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- COMPASS Research Group Section -->
-        <div class="compass-research-box">
-            <div class="compass-section">
+            <!-- COMPASS Banner -->
+            <div class="compass-banner">
                 <svg class="compass-logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                     <!-- Outer ring -->
                     <circle cx="100" cy="100" r="95" fill="none" stroke="#e2e8f0" stroke-width="3"/>
@@ -733,375 +741,275 @@
                     <text x="15" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#64748b">C</text>
                 </svg>
                 
-                <div class="compass-info">
-                    <h3>COMPASS Research Group</h3>
-                    <div class="compass-full-name">COoperative Machine intelligence for People-Aligned Safe Systems</div>
-                    <div class="compass-description">
-                        <span class="highlight">Short Bio:</span> I am a Principal Investigator at the <a href="https://institute-tue.ellis.eu/">ELLIS Institute Tübingen</a> and an independent research group leader at the <a href="https://is.mpg.de/">Max-Planck Institute for Intelligent Systems</a> and <a href="https://tuebingen.ai/">Tübingen AI Center</a>. I lead the <span class="highlight">COMPASS research group</span>, focused on developing safe, aligned, and steerable AI agents with emphasis on security, human aspects, and cooperative multi-agent systems. <span class="highlight"><a href="#positions">📢 Check open positions!</a></span>
+                <div class="compass-text">
+                    <h2>COMPASS Research Group</h2>
+                    <div class="full-name">COoperative Machine intelligence for People-Aligned Safe Systems</div>
+                    <div class="description">
+                        Developing safe, aligned, and steerable AI agents with emphasis on security, human aspects, and cooperative multi-agent systems. 
+                        <a href="https://s-abdelnabi.github.io/files/RS_SaharAbdelnabi.pdf">Research Statement</a> · 
+                        <a href="https://s-abdelnabi.github.io/files/application_talk_pdf.pdf">Job Talk</a> · 
+                        <a href="#hiring">We're hiring!</a>
                     </div>
                 </div>
             </div>
         </div>
+    </header>
 
-        <!-- About Section -->
-        <div class="section" id="about">
-            <h2>About Me</h2> 
-            <div class="intro">
-                Previously, I was an AI security researcher at <span class="highlight">Microsoft</span>. I completed my PhD at <span class="highlight">CISPA Helmholtz Center for Information Security</span>, advised by <a href="https://cispa.saarland/group/fritz/">Prof. Dr. Mario Fritz</a>, and I obtained my MSc degree at Saarland University.
+    <div class="container">
+        <!-- Bio Section -->
+        <section class="section" id="bio">
+            <h2>About</h2>
+            <div class="prose">
+                I lead the COMPASS research group at the <a href="https://institute-tue.ellis.eu/">ELLIS Institute Tübingen</a>, <a href="https://is.mpg.de/">Max-Planck Institute for Intelligent Systems</a>, and <a href="https://tuebingen.ai/">Tübingen AI Center</a>.
                 <br><br>
-                I am interested in the broad intersection of AI with security, safety, and sociopolitical aspects. This includes the following areas: 
-                <br>
-                1) Understanding, probing, and evaluating the failure modes of AI models, their biases, emergent risks, and their misuse scenarios. 
-                <br>
-                2) How to design mitigations, system defenses, white-box control methods, and reasoning enhancements to counter such risks. 
-                <br>
-                3) Leveraging AI agents for good: scientific discovery and advancing our society.
+                Previously, I was an AI security researcher at <span class="highlight">Microsoft</span>. I completed my PhD at <span class="highlight">CISPA Helmholtz Center for Information Security</span> (<a href="https://cispa.saarland/group/fritz/">advised by Prof. Dr. Mario Fritz</a>).
                 <br><br>
-                Our <a href="https://arxiv.org/abs/2302.12173">work</a>, in 2023, <span class="highlight">was the first to identify, coin, and taxonomize the indirect prompt injection vulnerability</span> in LLM-integrated applications, and in 2020, to <span class="highlight">propose and call for watermarking generative AI</span> for <a href="https://arxiv.org/abs/2009.03015">language</a> and <a href="https://openaccess.thecvf.com/content/ICCV2021/html/Yu_Artificial_Fingerprinting_for_Generative_Models_Rooting_Deepfake_Attribution_in_Training_ICCV_2021_paper.html">vision</a>.
+                Our <a href="https://arxiv.org/abs/2302.12173">work</a> in 2023 <span class="highlight">was the first to identify, coin, and taxonomize indirect prompt injection</span> in LLM-integrated applications. In 2020, we <span class="highlight">proposed watermarking for generative AI</span> for <a href="https://arxiv.org/abs/2009.03015">language</a> and <a href="https://openaccess.thecvf.com/content/ICCV2021/html/Yu_Artificial_Fingerprinting_for_Generative_Models_Rooting_Deepfake_Attribution_in_Training_ICCV_2021_paper.html">vision</a>.
                 <br><br>
-                Our <a href="https://aclanthology.org/2025.acl-long.1454/">work</a> on LLM sampling heuristics <span class="award-highlight">received a Best Paper Award at ACL2025!</span>
+                🏆 Our <a href="https://aclanthology.org/2025.acl-long.1454/">work</a> on LLM sampling heuristics <span class="award-highlight">received a Best Paper Award at ACL 2025!</span>
+            </div>
+        </section>
+
+        <!-- Research Topics -->
+        <section class="section" id="research">
+            <h2>Research</h2>
+            <div class="prose">
+                I work at the intersection of AI with security, safety, and sociopolitical aspects:
+                <br><br>
+                <strong>1.</strong> Understanding, probing, and evaluating the failure modes of AI models — their biases, emergent risks, and misuse scenarios.
+                <br><br>
+                <strong>2.</strong> Designing mitigations, system defenses, white-box control methods, and reasoning enhancements to counter such risks.
+                <br><br>
+                <strong>3.</strong> Leveraging AI agents for good: scientific discovery and advancing our society.
             </div>
             
             <div class="research-areas">
-                <div class="research-tag">AI Security</div>
-                <div class="research-tag">A(G)I Safety & Alignment</div>
-                <div class="research-tag">AI & Society</div>
-                <div class="research-tag">AI Ethics</div>
-                <div class="research-tag">Prompt Injection</div>
-                <div class="research-tag">Multi-agent Safety</div>
-                <div class="research-tag">Cooperative AI</div>
-                <div class="research-tag">Human-AI Interaction</div>
+                <span class="research-tag">AI Security</span>
+                <span class="research-tag">A(G)I Safety & Alignment</span>
+                <span class="research-tag">AI & Society</span>
+                <span class="research-tag">AI Ethics</span>
+                <span class="research-tag">Prompt Injection</span>
+                <span class="research-tag">Multi-agent Safety</span>
+                <span class="research-tag">Cooperative AI</span>
+                <span class="research-tag">Human-AI Interaction</span>
             </div>
-        </div>
+        </section>
 
-        <!-- Open Positions Section -->
-        <div class="section" id="positions">
-            <div class="positions-highlight">
-                <div class="positions-content">
-                    <div class="positions-header">
-                        <svg class="positions-icon" width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Outer ring -->
-                            <circle cx="100" cy="100" r="95" fill="none" stroke="#e2e8f0" stroke-width="3"/>
-                            <circle cx="100" cy="100" r="85" fill="none" stroke="#cbd5e1" stroke-width="1"/>
-                            
-                            <!-- AI-Human Network in background -->
-                            <g opacity="0.4">
-                                <!-- Network connections -->
-                                <g stroke="#3b82f6" stroke-width="1.5" fill="none" opacity="0.6">
-                                    <path d="M65 55 Q100 40 135 55" stroke-dasharray="3,2"/>
-                                    <path d="M65 145 Q100 160 135 145" stroke-dasharray="3,2"/>
-                                    <path d="M55 65 Q40 100 55 135" stroke-dasharray="3,2"/>
-                                    <path d="M145 65 Q160 100 145 135" stroke-dasharray="3,2"/>
-                                    
-                                    <path d="M65 55 L100 100" stroke="#10b981" stroke-width="1"/>
-                                    <path d="M135 55 L100 100" stroke="#10b981" stroke-width="1"/>
-                                    <path d="M65 145 L100 100" stroke="#10b981" stroke-width="1"/>
-                                    <path d="M135 145 L100 100" stroke="#10b981" stroke-width="1"/>
-                                </g>
-                                
-                                <!-- AI Agents -->
-                                <g fill="#3b82f6" stroke="#2563eb" stroke-width="0.5">
-                                    <rect x="60" y="50" width="10" height="10" rx="2" fill="#3b82f6"/>
-                                    <circle cx="65" cy="47" r="2" fill="#3b82f6"/>
-                                    <circle cx="63" cy="46" r="0.5" fill="white"/>
-                                    <circle cx="67" cy="46" r="0.5" fill="white"/>
-                                    
-                                    <rect x="130" y="50" width="10" height="10" rx="2" fill="#3b82f6"/>
-                                    <circle cx="135" cy="47" r="2" fill="#3b82f6"/>
-                                    <circle cx="133" cy="46" r="0.5" fill="white"/>
-                                    <circle cx="137" cy="46" r="0.5" fill="white"/>
-                                    
-                                    <rect x="60" y="140" width="10" height="10" rx="2" fill="#3b82f6"/>
-                                    <circle cx="65" cy="137" r="2" fill="#3b82f6"/>
-                                    <circle cx="63" cy="136" r="0.5" fill="white"/>
-                                    <circle cx="67" cy="136" r="0.5" fill="white"/>
-                                    
-                                    <rect x="130" y="140" width="10" height="10" rx="2" fill="#3b82f6"/>
-                                    <circle cx="135" cy="137" r="2" fill="#3b82f6"/>
-                                    <circle cx="133" cy="136" r="0.5" fill="white"/>
-                                    <circle cx="137" cy="136" r="0.5" fill="white"/>
-                                </g>
-                                
-                                <!-- Human nodes -->
-                                <g fill="#10b981" stroke="#059669" stroke-width="0.5">
-                                    <circle cx="45" cy="75" r="3" fill="#10b981"/>
-                                    <path d="M45 78 L45 88 M42 82 L48 82 M45 88 L42 92 M45 88 L48 92" stroke="#10b981" stroke-width="1.5" fill="none"/>
-                                    
-                                    <circle cx="155" cy="75" r="3" fill="#10b981"/>
-                                    <path d="M155 78 L155 88 M152 82 L158 82 M155 88 L152 92 M155 88 L158 92" stroke="#10b981" stroke-width="1.5" fill="none"/>
-                                    
-                                    <circle cx="45" cy="125" r="3" fill="#10b981"/>
-                                    <path d="M45 128 L45 138 M42 132 L48 132 M45 138 L42 142 M45 138 L48 142" stroke="#10b981" stroke-width="1.5" fill="none"/>
-                                    
-                                    <circle cx="155" cy="125" r="3" fill="#10b981"/>
-                                    <path d="M155 128 L155 138 M152 132 L158 132 M155 138 L152 142 M155 138 L158 142" stroke="#10b981" stroke-width="1.5" fill="none"/>
-                                </g>
-                            </g>
-                            
-                            <!-- Main compass rose -->
-                            <g class="rotating">
-                                <path d="M100 20 L110 80 L100 75 L90 80 Z" fill="#1e40af" stroke="#1e3a8a" stroke-width="1"/>
-                                <path d="M100 180 L90 120 L100 125 L110 120 Z" fill="#64748b" stroke="#475569" stroke-width="1"/>
-                                <path d="M180 100 L120 90 L125 100 L120 110 Z" fill="#3b82f6" stroke="#2563eb" stroke-width="1"/>
-                                <path d="M20 100 L80 110 L75 100 L80 90 Z" fill="#64748b" stroke="#475569" stroke-width="1"/>
-                                
-                                <path d="M135 65 L110 85 L115 90 L140 70 Z" fill="#10b981" stroke="#059669" stroke-width="0.5"/>
-                                <path d="M65 65 L90 85 L85 90 L60 70 Z" fill="#10b981" stroke="#059669" stroke-width="0.5"/>
-                                <path d="M135 135 L110 115 L115 110 L140 130 Z" fill="#10b981" stroke="#059669" stroke-width="0.5"/>
-                                <path d="M65 135 L90 115 L85 110 L60 130 Z" fill="#10b981" stroke="#059669" stroke-width="0.5"/>
-                            </g>
-                            
-                            <!-- Center hub -->
-                            <circle cx="100" cy="100" r="15" fill="#1e40af" stroke="white" stroke-width="2"/>
-                            <circle cx="100" cy="100" r="8" fill="white"/>
-                            <circle cx="100" cy="100" r="4" fill="#1e40af" class="pulsing"/>
-                            
-                            <!-- Direction markers -->
-                            <text x="100" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">S</text>
-                            <text x="185" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#3b82f6">A</text>
-                            <text x="100" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#64748b">H</text>
-                            <text x="15" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#64748b">C</text>
-                        </svg>
-                        <h2 class="positions-title">Join the COMPASS Research Group!</h2>
-                    </div>
-                    <div class="positions-description">
-                        You can find my research statement <a href="https://s-abdelnabi.github.io/files/RS_SaharAbdelnabi.pdf">here</a> and job talk <a href="https://s-abdelnabi.github.io/files/application_talk_pdf.pdf">here</a>. I am open to broad topics on A(G)I safety and security, interpretability, reasoning, evals, contextual integrity, agentic risks and opportunities, multi-agent dynamics, agents with long-term memory, self-improving agents, (deceptive) alignment, situational awareness, manipulation and deception. If you are interested in these research directions, I would love to hear from you!
-                        <br><br>
-                        <strong>Open Positions:</strong><br>
-                        • To apply, please check and fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSfERP8qmSWHeDLFQ_NAyyaxcznDrzjJZDNbosPgJDJa0d0MKA/viewform?usp=sharing&ouid=113360022370444423586">this form</a><br>
-                        • I will review each application and reach out if there is a good fit! Due to the large volume of applications, I may not be able to respond individually<br> 
-                        • I will also likely admit <strong>PhD students</strong> via the following channels:<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• <a href="https://learning-systems.org/">Max Planck & ETH Center for Learning Systems (CLS)</a><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• <a href="https://imprs.is.mpg.de/">International Max Planck Research School for Intelligent Systems (IMPRS-IS)</a><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• <a href="https://ellis.eu/phd-postdoc">ELLIS PhD Program</a>
-                        <br>
-                    </div>
-                </div>
+        <!-- Group Section -->
+        <section class="section" id="group">
+            <h2>Group</h2>
+            
+            <div class="group-intro">
+                <p>
+                    The COMPASS group investigates how to build AI systems that are safe, aligned with human values, and robust against adversarial manipulation. We work on broad topics on A(G)I safety and security, interpretability, reasoning, evals, contextual integrity, agentic risks and opportunities, multi-agent dynamics, agents with long-term memory, self-improving agents, (deceptive) alignment, situational awareness, manipulation and deception. 
+                </p>
             </div>
-        </div>
+
+            <h3 style="font-size: 1.2rem; color: #1e40af; margin-bottom: 15px;">Members</h3>
+            
+            <ul class="members-list">
+                <li><a href="https://www.linkedin.com/in/daniel-donnelly-428701170/">Daniel Donnelly</a> — PhD Student</li>
+                <li><a href="https://scholar.google.com/citations?user=qr-gsXMAAAAJ">Jeanne Salle</a> — PhD Student (co-advised with <a href="https://www.andriushchenko.me/">Maksym Andriushchenko</a>)</li>
+                <li><a href="https://www.linkedin.com/in/katharina-deckenbach/">Katharina Deckenbach</a> — Research Intern</li>
+            </ul>
+        </section>
+
+        <!-- Hiring Section -->
+        <section class="section" id="hiring">
+            <h2>Open Positions</h2>
+            
+            <div class="hiring-content">
+                <h3>🧭 Join COMPASS!</h3>
+                <div class="intro">
+                    I'm looking for curious, driven researchers interested in AI safety and security.
+                </div>
+                
+                <strong>How to Apply:</strong>
+                <ul>
+                    <li>For research interns and visits, apply via <a href="https://docs.google.com/forms/d/e/1FAIpQLSfERP8qmSWHeDLFQ_NAyyaxcznDrzjJZDNbosPgJDJa0d0MKA/viewform?usp=sharing&ouid=113360022370444423586">this form</a></li>
+                    <li>I review each application and reach out if there's a good fit</li>
+                    <li><strong>PhD students</strong> can apply through:
+                        <ul class="sub-list">
+                            <li><a href="https://learning-systems.org/">Max Planck & ETH Center for Learning Systems (CLS)</a></li>
+                            <li><a href="https://imprs.is.mpg.de/">IMPRS-IS</a></li>
+                            <li><a href="https://ellis.eu/phd-postdoc">ELLIS PhD Program</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
         <!-- News Section -->
-        <div class="section" id="news">
-            <h2>Highlights</h2>
-            <div class="news-item">
-                <div class="news-date">July 2025</div>
-                <div class="news-content">
-                    I gave a talk <a href="https://securityweek.at/">"Graz Security Week"</a> on privacy and AI agents (<a href="https://s-abdelnabi.github.io/files/graz_security_week_presentation.pdf">Slides</a>)
+        <section class="section" id="news">
+            <h2>News and Highlights</h2>
+            
+            <div class="card">
+                <div class="card-date">July 2025</div>
+                <div class="card-content">
+                    I gave a talk at <a href="https://securityweek.at/">Graz Security Week</a> on privacy and AI agents (<a href="https://s-abdelnabi.github.io/files/graz_security_week_presentation.pdf">Slides</a>)
                 </div>
             </div>
             
-            <div class="news-item">
-                <div class="news-date">July 2025</div>
-                <div class="news-content">
-                    Our paper <a href="https://aclanthology.org/2025.acl-long.1454/">"A Theory of Response Sampling in LLMs: Part Descriptive and Part Prescriptive"</a> <span class="award-highlight">received A "Best Paper Award" at ACL2025!</span>
+            <div class="card">
+                <div class="card-date">July 2025</div>
+                <div class="card-content">
+                    Our paper <a href="https://aclanthology.org/2025.acl-long.1454/">"A Theory of Response Sampling in LLMs"</a> <span class="award-highlight"> received a Best Paper Award at ACL 2025!</span> 🏆
                 </div>
             </div>
             
-            <div class="news-item">
-                <div class="news-date">December 2024</div>
-                <div class="news-content">
-                    <span class="award-highlight">Successfully defended my PhD with grade: Summa cum laude!</span>
+            <div class="card">
+                <div class="card-date">December 2024</div>
+                <div class="card-content">
+                    I defended my <span class="award-highlight">PhD with Summa cum laude!</span> 🏆
                 </div>
             </div>
 
-            <div class="news-item">
-                <div class="news-date">Feb 2024</div>
-                <div class="news-content">
-                   I have joined <span class="highlight">Microsoft</span> as an AI Security Researcher! 
+            <div class="card">
+                <div class="card-date">February 2024</div>
+                <div class="card-content">
+                   I joined <span class="highlight">Microsoft</span> as an AI Security Researcher
                 </div>
             </div>
 
-            <div class="news-item">
-                <div class="news-date">December 2023</div>
-                <div class="news-content">
-                    Our paper <a href="https://arxiv.org/abs/2302.12173">"Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection"</a> received the <span class="award-highlight">best paper award</span> at AISec'23 workshop!
+            <div class="card">
+                <div class="card-date">December 2023</div>
+                <div class="card-content">
+                    Our paper <a href="https://arxiv.org/abs/2302.12173">"Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection"</a> — <span class="award-highlight">received a Best Paper Award at AISec'23</span> 🏆
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Selected Publications -->
-        <div class="section" id="publications">
+        <!-- Publications -->
+        <section class="section" id="publications">
             <h2>Selected Publications</h2>
-            <p style="margin-bottom: 25px; color: #6b7280;">For the full list, please refer to my <a href="https://scholar.google.de/citations?user=QEiYbDYAAAAJ&hl=en" style="color: #3b82f6; text-decoration: none; font-weight: 500;">Google Scholar</a> page.</p>
+            <p style="margin-bottom: 25px; color: #718096;">Full list on <a href="https://scholar.google.de/citations?user=QEiYbDYAAAAJ&hl=en" style="color: #3b82f6; text-decoration: none; font-weight: 500;">Google Scholar</a></p>
             
-            <div class="publication">
+            <div class="pub">
                 <div class="pub-title">ConVerse: Benchmarking Contextual Safety in Agent-to-Agent Conversations</div>
                 <div class="pub-authors">Amr Gomaa, Ahmed Salem, <strong>Sahar Abdelnabi</strong></div>
                 <div class="pub-venue">EACL Findings 2026</div>
-                <div class="pub-links">
-                    <a href="https://arxiv.org/abs/2511.05359">Paper</a>
-                </div>
+                <div class="pub-links"><a href="https://arxiv.org/abs/2511.05359">Paper</a></div>
             </div>
             
-            <div class="publication">
+            <div class="pub">
                 <div class="pub-title">LLMail-Inject: A Dataset from a Realistic Adaptive Prompt Injection Challenge</div>
-                <div class="pub-authors"><strong>Sahar Abdelnabi</strong>, Aideen Fay, Ahmed Salem, Egor Zverev, Kai-Chieh Liao, Chi-Huang Liu, Chun-Chih Kuo, Jannis Weigend, Danyael Manlangit, Alex Apostolov, Haris Umair, João Donato, Masayuki Kawakita, Athar Mahboob, Tran Huu Bach, Tsun-Han Chiang, Myeongjin Cho, Hajin Choi, Byeonghyeon Kim, Hyeonjin Lee, Benjamin Pannell, Conor McCauley, Mark Russinovich, Andrew Paverd, Giovanni Cherubin</div>
+                <div class="pub-authors"><strong>Sahar Abdelnabi</strong>, Aideen Fay, Ahmed Salem, et al.</div>
                 <div class="pub-venue">Arxiv 2025</div>
                 <div class="pub-links">
-                    <a href="https://arxiv.org/abs/2506.09956">Paper</a> <a href="https://huggingface.co/datasets/microsoft/llmail-inject-challenge">Dataset</a> <a href="https://github.com/microsoft/llmail-inject-challenge">Challenge Code</a> <a href="https://github.com/microsoft/llmail-inject-challenge-analysis">Data Analysis Code</a>
+                    <a href="https://arxiv.org/abs/2506.09956">Paper</a>
+                    <a href="https://huggingface.co/datasets/microsoft/llmail-inject-challenge">Dataset</a>
+                    <a href="https://github.com/microsoft/llmail-inject-challenge">Code</a>
                 </div>
             </div>
             
-            <div class="publication">
+            <div class="pub">
                 <div class="pub-title">The Hawthorne Effect in Reasoning Models: Evaluating and Steering Test Awareness</div>
                 <div class="pub-authors"><strong>Sahar Abdelnabi</strong>, Ahmed Salem</div>
-                <div class="pub-venue">NeurIPS 2025 🏆 <span class="award-highlight">Spotlight</span></div>
+                <div class="pub-venue">NeurIPS 2025 <span class="award-highlight">Spotlight</span> 🏆</div>
                 <div class="pub-links">
-                    <a href="https://arxiv.org/abs/2505.14617">Paper</a> <a href="https://www.lesswrong.com/posts/B2o6nrxwKxLPsSYdh/do-llms-comply-differently-during-tests-is-this-a-hidden">Post</a> 
+                    <a href="https://arxiv.org/abs/2505.14617">Paper</a>
+                    <a href="https://www.lesswrong.com/posts/B2o6nrxwKxLPsSYdh/do-llms-comply-differently-during-tests-is-this-a-hidden">Post</a>
                 </div>
             </div>
 
-            <div class="publication">
+            <div class="pub">
                 <div class="pub-title">Contextual Integrity in LLMs via Reasoning and Reinforcement Learning</div>
-                <div class="pub-authors">Guangchen Lan, Huseyin A Inan, <strong>Sahar Abdelnabi</strong>, Janardhan Kulkarni, Lukas Wutschitz, Reza Shokri, Christopher G Brinton, Robert Sim</div>
+                <div class="pub-authors">Guangchen Lan, Huseyin A Inan, <strong>Sahar Abdelnabi</strong>, et al.</div>
                 <div class="pub-venue">NeurIPS 2025</div>
-                <div class="pub-links">
-                    <a href="https://arxiv.org/abs/2506.04245">Paper</a>
-                </div>
+                <div class="pub-links"><a href="https://arxiv.org/abs/2506.04245">Paper</a></div>
             </div>
 
-            <div class="publication">
+            <div class="pub">
                 <div class="pub-title">Firewalls to Secure Dynamic LLM Agentic Networks</div>
                 <div class="pub-authors"><strong>Sahar Abdelnabi*</strong>, Amr Gomaa*, Eugene Bagdasarian, Per Ola Kristensson, Reza Shokri</div>
                 <div class="pub-venue">Arxiv 2025</div>
-                <div class="pub-links">
-                    <a href="https://arxiv.org/abs/2502.01822">Paper</a>
-                </div>
-            </div>
-            
-            <div class="publication">
-                <div class="pub-title">Safety is Essential for Responsible Open-Ended Systems</div>
-                <div class="pub-authors">Ivaxi Sheth, Jan Wehner*, <strong>Sahar Abdelnabi*</strong>, Ruta Binkyte*, Mario Fritz</div>
-                <div class="pub-venue">Arxiv 2025</div>
-                <div class="pub-links">
-                    <a href="https://arxiv.org/abs/2502.04512">Paper</a>
-                </div>
-            </div>
-            
-            <div class="publication">
-                <div class="pub-title">Context-Aware Reasoning On Parametric Knowledge for Inferring Causal Variables</div>
-                <div class="pub-authors">Ivaxi Sheth, <strong>Sahar Abdelnabi</strong>, and Mario Fritz</div>
-                <div class="pub-venue">EMNLP Findings 2025 </div> 
-                <div class="pub-links">
-                    <a href="https://arxiv.org/abs/2409.02604">Paper</a>
-                </div>
-            </div>
- 
-            <div class="publication">
-                <div class="pub-title">Taxonomy, Opportunities, and Challenges of Representation Engineering for Large Language Models</div>
-                <div class="pub-authors">Jan Wehner, <strong>Sahar Abdelnabi</strong>, Daniel Tan, David Krueger, Mario Fritz</div>
-                <div class="pub-venue">TMLR 2025 <span class="award-highlight">Survey Certification</span> </div>
-                <div class="pub-links">
-                    <a href="https://arxiv.org/abs/2502.19649">Paper</a>
-                </div>
+                <div class="pub-links"><a href="https://arxiv.org/abs/2502.01822">Paper</a></div>
             </div>
 
-            <div class="publication">
+            <div class="pub">
                 <div class="pub-title">A Theory of Response Sampling in LLMs: Part Descriptive and Part Prescriptive</div>
-                <div class="pub-authors">Sarath Sivaprasad*, Pramod Kaushik*, <strong>Sahar Abdelnabi</strong>, and Mario Fritz</div>
-                <div class="pub-venue">ACL 2025 🏆 <span class="award-highlight">A Best Paper Award</span>!! </div> 
-                <div class="pub-links">
-                    <a href="https://arxiv.org/abs/2402.11005">Paper</a>
-                </div>
+                <div class="pub-authors">Sarath Sivaprasad*, Pramod Kaushik*, <strong>Sahar Abdelnabi</strong>, Mario Fritz</div>
+                <div class="pub-venue">ACL 2025 <span class="award-highlight">Best Paper Award</span> 🏆</div> 
+                <div class="pub-links"><a href="https://arxiv.org/abs/2402.11005">Paper</a></div>
             </div>
 
-            <div class="publication">
+            <div class="pub">
                 <div class="pub-title">Get My Drift? Catching LLM Task Drift with Activation Deltas</div>
-                <div class="pub-authors"><strong>Sahar Abdelnabi*</strong>, Aideen Fay*, Giovanni Cherubin, Ahmed Salem, Mario Fritz, and Andrew Paverd</div>
+                <div class="pub-authors"><strong>Sahar Abdelnabi*</strong>, Aideen Fay*, Giovanni Cherubin, Ahmed Salem, Mario Fritz, Andrew Paverd</div>
                 <div class="pub-venue">SaTML 2025</div>
-                <div class="pub-links">
-                    <a href="https://arxiv.org/abs/2406.00799">Paper</a>
-                </div>
+                <div class="pub-links"><a href="https://arxiv.org/abs/2406.00799">Paper</a></div>
             </div>
 
-            <div class="publication">
+            <div class="pub">
                 <div class="pub-title">Can LLMs Separate Instructions From Data? And What Do We Even Mean By That?</div>
-                <div class="pub-authors">Egor Zverev, <strong>Sahar Abdelnabi</strong>, Soroush Tabesh, Mario Fritz, and Christoph H Lampert</div>
+                <div class="pub-authors">Egor Zverev, <strong>Sahar Abdelnabi</strong>, Soroush Tabesh, Mario Fritz, Christoph H Lampert</div>
                 <div class="pub-venue">ICLR 2025</div>
-                <div class="pub-links">
-                    <a href="https://arxiv.org/abs/2403.06833">Paper</a>
-                </div>
+                <div class="pub-links"><a href="https://arxiv.org/abs/2403.06833">Paper</a></div>
             </div>
 
-            <div class="publication">
+            <div class="pub">
                 <div class="pub-title">Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation</div>
-                <div class="pub-authors"><strong>Sahar Abdelnabi</strong>, Amr Gomaa, Sarath Sivaprasad, Lea Schönherr, and Mario Fritz</div>
+                <div class="pub-authors"><strong>Sahar Abdelnabi</strong>, Amr Gomaa, Sarath Sivaprasad, Lea Schönherr, Mario Fritz</div>
                 <div class="pub-venue">NeurIPS Datasets and Benchmarks 2024</div>
-                <div class="pub-links">
-                    <a href="https://arxiv.org/abs/2309.17234">Paper</a>
-                </div>
+                <div class="pub-links"><a href="https://arxiv.org/abs/2309.17234">Paper</a></div>
             </div>
 
-            <div class="publication">
+            <div class="pub">
                 <div class="pub-title">Dataset and Lessons Learned from the 2024 SaTML LLM Capture-the-Flag Competition</div>
-                <div class="pub-authors"> Edoardo Debenedetti*, Javier Rando*, Daniel Paleka*, Silaghi Fineas Florin, Dragos Albastroiu, Niv Cohen, Yuval Lemberg, Reshmi Ghosh, Rui Wen, Ahmed Salem, Giovanni Cherubin, Santiago Zanella-Beguelin, Robin Schmid, Victor Klemm, Takahiro Miki, Chenhao Li, Stefan Kraft, Mario Fritz, Florian Tramèr, <strong>Sahar Abdelnabi</strong>, Lea Schönherr</div>
-                <div class="pub-venue">NeurIPS Datasets and Benchmarks 2024 🏆 <span class="award-highlight">Spotlight</span></div>
-                <div class="pub-links">
-                    <a href="https://arxiv.org/abs/2406.07954">Paper</a>
-                </div>
+                <div class="pub-authors">Edoardo Debenedetti*, Javier Rando*, Daniel Paleka*, et al.</div>
+                <div class="pub-venue">NeurIPS Datasets and Benchmarks 2024 <span class="award-highlight">Spotlight</span> 🏆</div> 
+                <div class="pub-links"><a href="https://arxiv.org/abs/2406.07954">Paper</a></div>
             </div>
 
-            <div class="publication">
+            <div class="pub">
                 <div class="pub-title">Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection</div>
-                <div class="pub-authors"> Kai Greshake*, <strong>Sahar Abdelnabi*</strong>, Shailesh Mishra, Christoph Endres, Thorsten Holz, and Mario Fritz</div>
-                <div class="pub-venue">AISec Workshop at CCS 2023 🏆 <span class="award-highlight">Best Paper Award</span></div>
-                <div class="pub-links">
-                    <a href="https://arxiv.org/abs/2302.12173">Paper</a>
-                </div>
+                <div class="pub-authors">Kai Greshake*, <strong>Sahar Abdelnabi*</strong>, Shailesh Mishra, Christoph Endres, Thorsten Holz, Mario Fritz</div>
+                <div class="pub-venue">AISec @ CCS 2023 <span class="award-highlight">Best Paper Award</span> 🏆</div>
+                <div class="pub-links"><a href="https://arxiv.org/abs/2302.12173">Paper</a></div>
             </div>
 
-            <div class="publication">
+            <div class="pub">
                 <div class="pub-title">Fact-Saboteurs: A Taxonomy of Evidence Manipulation Attacks against Fact-Verification Systems</div>
-                <div class="pub-authors"><strong>Sahar Abdelnabi</strong> and Mario Fritz</div>
+                <div class="pub-authors"><strong>Sahar Abdelnabi</strong>, Mario Fritz</div>
                 <div class="pub-venue">USENIX Security 2023</div>
-                <div class="pub-links">
-                    <a href="https://arxiv.org/abs/2209.03755">Paper</a>
-                </div>
+                <div class="pub-links"><a href="https://arxiv.org/abs/2209.03755">Paper</a></div>
             </div>
 
-            <div class="publication">
+            <div class="pub">
                 <div class="pub-title">Open-Domain, Content-based, Multi-modal Fact-checking of Out-of-Context Images via Online Resources</div>
-                <div class="pub-authors"><strong>Sahar Abdelnabi</strong>, Rakibul Hasan, and Mario Fritz</div>
+                <div class="pub-authors"><strong>Sahar Abdelnabi</strong>, Rakibul Hasan, Mario Fritz</div>
                 <div class="pub-venue">CVPR 2022</div>
-                <div class="pub-links">
-                    <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Abdelnabi_Open-Domain_Content-Based_Multi-Modal_Fact-Checking_of_Out-of-Context_Images_via_Online_Resources_CVPR_2022_paper.html">Paper</a>
-                </div>
+                <div class="pub-links"><a href="https://openaccess.thecvf.com/content/CVPR2022/html/Abdelnabi_Open-Domain_Content-Based_Multi-Modal_Fact-Checking_of_Out-of-Context_Images_via_Online_Resources_CVPR_2022_paper.html">Paper</a></div>
             </div>
 
-            <div class="publication">
+            <div class="pub">
                 <div class="pub-title">Adversarial Watermarking Transformer: Towards Tracing Text Provenance with Data Hiding</div>
-                <div class="pub-authors"><strong>Sahar Abdelnabi</strong> and Mario Fritz</div>
+                <div class="pub-authors"><strong>Sahar Abdelnabi</strong>, Mario Fritz</div>
                 <div class="pub-venue">S&P 2021</div>
-                <div class="pub-links">
-                    <a href="https://arxiv.org/abs/2009.03015">Paper</a>
-                </div>
+                <div class="pub-links"><a href="https://arxiv.org/abs/2009.03015">Paper</a></div>
             </div>
 
-            <div class="publication">
+            <div class="pub">
                 <div class="pub-title">Artificial Fingerprinting for Generative Models: Rooting Deepfake Attribution in Training Data</div>
                 <div class="pub-authors">Ning Yu*, Vladislav Skripniuk*, <strong>Sahar Abdelnabi</strong>, Mario Fritz</div>
-                <div class="pub-venue">ICCV 2021 🏆 <span class="award-highlight">Oral</span></div>
-                <div class="pub-links">
-                    <a href="https://arxiv.org/abs/2009.03015">Paper</a>
-                </div>
+                <div class="pub-venue">ICCV 2021 <span class="award-highlight">Oral</span> 🏆</div>
+                <div class="pub-links"><a href="https://arxiv.org/abs/2007.08457">Paper</a></div>
             </div>
 
-            <div class="publication">
-                <div class="pub-title">Visualphishnet: Zero-day phishing website detection by visual similarity</div>
-                <div class="pub-authors"><strong>Sahar Abdelnabi</strong>, Katharina Krombholz, and Mario Fritz</div>
+            <div class="pub">
+                <div class="pub-title">VisualPhishNet: Zero-day Phishing Website Detection by Visual Similarity</div>
+                <div class="pub-authors"><strong>Sahar Abdelnabi</strong>, Katharina Krombholz, Mario Fritz</div>
                 <div class="pub-venue">CCS 2020</div>
-                <div class="pub-links">
-                    <a href="https://arxiv.org/abs/1909.00300">Paper</a>
-                </div>
+                <div class="pub-links"><a href="https://arxiv.org/abs/1909.00300">Paper</a></div>
             </div>
-        </div>
+        </section>
 
-        <!-- Media Coverage & Outreach Section -->
-        <div class="section" id="media">
+        <!-- Media -->
+        <section class="section" id="media">
             <h2>Media Coverage & Outreach</h2>
             
-            <div class="experience-item">
-                <div class="exp-title">Major Media Interviews & Features</div>
+            <div class="exp">
+                <div class="exp-title">Major Media Coverage</div>
                 <div class="exp-org">Vice, Wired, Zeit, MIT Technology Review</div>
                 <div class="exp-date">2023</div>
                 <div class="exp-desc">
@@ -1109,7 +1017,7 @@
                 </div>
             </div>
 
-            <div class="experience-item">
+            <div class="exp">
                 <div class="exp-title">Podcasts & Documentaries</div>
                 <div class="exp-org">Various Media Outlets</div>
                 <div class="exp-date">2022 - 2024</div>
@@ -1120,7 +1028,7 @@
                 </div>
             </div>
 
-            <div class="experience-item">
+            <div class="exp">
                 <div class="exp-title">Industry & Research Blogs</div>
                 <div class="exp-org">Microsoft Security Response Center, Montreal AI Ethics Institute</div>
                 <div class="exp-date">2023 - 2024</div>
@@ -1130,7 +1038,7 @@
                 </div>
             </div>
 
-            <div class="experience-item">
+            <div class="exp">
                 <div class="exp-title">Policy & Industry Impact</div>
                 <div class="exp-org">Government & Industry Organizations</div>
                 <div class="exp-date">2023 - Present</div>
@@ -1138,23 +1046,28 @@
                     Our work on "indirect prompt injection" has been featured by policymakers and practitioners including the German Federal Office for Information Security, NIST, OWASP, MITRE, Microsoft's AI bug bar, and many others, introducing new terminologies for the entire research and tech fields.
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Academic Service Section -->
-        <div class="section" id="service">
+        <!-- Service -->
+        <section class="section" id="service">
             <h2>Academic Service</h2>
             
-            <div class="experience-item">
+            <div class="exp">
                 <div class="exp-title">Program Committee Member</div>
-                <div class="exp-org">Multiple AI and Security Conferences, Workshops, and Journals</div>
-                <div class="exp-date">2023 - 2025</div>
-                <div class="exp-desc">
-                    <strong>Program Committee:</strong> S&P (2026), SaTML (2024, 2026), AISec Workshop (2023 - 2025), USENIX Security (2025), CCS (2025), AAAI (2025)
-                    <br><strong>Reviewer:</strong> ICLR (2024, 2025), ICML (2024), NeurIPS (2023, 2025), ICCV (2023), CVPR (2022, 2023), ECCV (2022), TPAMI (2021, 2022, 2024), TMLR (2025), ICML 2023 Neural Conversational AI Workshop, ICLR 2021 Workshop on "Synthetic Data Generation Quality, Privacy, Bias"
+                <div class="exp-date">2023 - 2026</div>
+                <div class="exp-org">
+                    S&P (2026), SaTML (2024, 2026), AISec Workshop (2023 - 2025), USENIX Security (2025), CCS (2025), AAAI (2025)
                 </div>
             </div>
+            
 
-            <div class="experience-item">
+            <div class="exp">
+                <div class="exp-title">Reviewer</div>
+                <div class="exp-org">ICLR, ICML, NeurIPS, CVPR, ICCV, ECCV, TPAMI, TMLR</div>
+                <div class="exp-date">2021–2025</div>
+            </div>
+
+            <div class="exp">
                 <div class="exp-title">Competition Organization</div>
                 <div class="exp-org">IEEE SaTML Challenges</div>
                 <div class="exp-date">2024 - 2025</div>
@@ -1164,167 +1077,108 @@
                 </div>
             </div>
 
-            <div class="experience-item">
+            <div class="exp">
                 <div class="exp-title">Grant Reviewing & Consulting</div>
-                <div class="exp-org">Philanthropic and Governmental Organizations</div>
-                <div class="exp-date">2024 - Present</div>
-                <div class="exp-desc">
-                    <strong>Grant Reviewing:</strong> Cooperative AI
-                    <br><strong>Consulting:</strong> UK AI Safety Institute
-                </div>
+                <div class="exp-org">Cooperative AI, UK AI Safety Institute</div>
+                <div class="exp-date">2024</div>
             </div>
-        </div>
 
-        <!-- Talks Section -->
-        <div class="section" id="talks">
-            <h2>Invited Talks & Panels </h2>
+            <div class="exp">
+                <div class="exp-title">Fellowship Mentoring</div>
+                <div class="pub-links-title"><a href="https://www.cai-research-fellowship.com/">Cooperative AI Research Fellowship</a></div>
+                <div class="exp-date">2026</div>
+            </div>
+        </section>
+
+        <!-- Talks -->
+        <section class="section" id="talks">
+            <h2>Talks & Panels</h2>
+
+            <div class="exp">
+                <div class="exp-title">Panel: Shaping Public AI for Science, Innovation & European Impact</div>
+                <div class="pub-links-title"><a href="https://ais25.eu/thematic-workshope/science-for-ai-tech">Science for AI Workshop - AI in Science Summit</a></div>
+                <div class="exp-date">2025</div>
+            </div>
+
+            <div class="exp">
+                <div class="exp-title">What does it mean for AI agents to preserve privacy?</div>
+                <div class="pub-links-title"><a href="https://securityweek.at/">Graz Security Week</a></div>
+                <div class="exp-date">2025</div>
+            </div>
             
-            <div class="experience-item">
+            <div class="exp">
                 <div class="exp-title">Firewalls to Secure Dynamic LLM Agentic Networks</div>
                 <div class="exp-org">Brave, Google DeepMind, Qualcomm</div>
                 <div class="exp-date">2025</div>
-                <div class="exp-desc">
-                    Presenting recent research on securing LLM agent networks across multiple industry venues.
-                </div>
             </div>
 
-            <div class="experience-item">
-                <div class="exp-title">Panel: Women in AI Security Workshop</div>
-                <div class="exp-org">The Alan Turing Institute</div>
+            <div class="exp">
+                <div class="exp-title">Panel: Women in AI Security</div>
+                <div class="pub-links-title"><a href="https://www.turing.ac.uk/events/women-ai-security-workshop-0">The Alan Turing Institute</a></div>
                 <div class="exp-date">2025</div>
-                <div class="exp-desc">
-                    Participated as a panelist discussing trends, challenges, diversity, and inclusion in AI security research.
-                </div>
             </div>
 
-            <div class="experience-item">
-                <div class="exp-title">Panel: Implementation and Evaluation of a Research Paper</div>
-                <div class="exp-org">AI Saturdays Lagos</div>
-                <div class="exp-date">2024</div>
-                <div class="exp-desc">
-                    Participated as a panelist discussing prescriptives and research experiences.
-                </div>
-            </div>
-
-            <div class="experience-item">
+            <div class="exp">
                 <div class="exp-title">Towards Aligned, Interpretable, and Steerable Safe AI Agents</div>
-                <div class="exp-org">TU Graz, UMass Amherst Security and Privacy Seminar, CISPA, ELLIS Institute</div>
+                <div class="exp-org">TU Graz, UMass Amherst, CISPA, ELLIS Institute Tübingen</div>
                 <div class="exp-date">2025</div>
-                <div class="exp-desc">
-                    Series of talks on developing safer and more controllable AI agent systems.
-                </div>
             </div>
 
-            <div class="experience-item">
-                <div class="exp-title">On the Security of Real-World LLM-Integrated Applications</div>
-                <div class="exp-org">European Symposium on Security and Artificial Intelligence</div>
-                <div class="exp-date">2024</div>
-                <div class="exp-desc">
-                    Invited talk on security vulnerabilities in production LLM systems.
-                </div>
-            </div>
-
-            <div class="experience-item">
+            <div class="exp">
                 <div class="exp-title">On New Security and Safety Challenges Posed by LLMs</div>
-                <div class="exp-org">HIDA PhD Meet-up (Keynote), MLSec seminars</div>
+                <div class="exp-org">HIDA PhD Meet-up (Keynote), MLSec Seminars</div>
                 <div class="exp-date">2024</div>
-                <div class="exp-desc">
-                    Keynote presentation on emerging security challenges in large language models and evaluation methodologies.
-                </div>
             </div>
 
-            <div class="experience-item">
+            <div class="exp">
                 <div class="exp-title">Compromising LLMs: The Advent of AI Malware</div>
                 <div class="exp-org">Black Hat USA 2023</div>
                 <div class="exp-date">2023</div>
-                <div class="exp-desc">
-                    Major industry conference presentation on LLM security vulnerabilities and attack vectors.
-                </div>
             </div>
 
-            <div class="experience-item">
+            <div class="exp">
                 <div class="exp-title">On Evaluating Language Models and Their Security Implications</div>
                 <div class="exp-org">Vector Institute, ETH Zürich</div>
                 <div class="exp-date">2023</div>
-                <div class="exp-desc">
-                    Research talks on methodologies for evaluating LLM safety and security properties.
-                </div>
             </div>
+        </section>
 
-            <div class="experience-item">
-                <div class="exp-title">LLM-Deliberation: Evaluating LLMs with Interactive Multi-Agent Negotiation</div>
-                <div class="exp-org">SIGSEC talk</div>
-                <div class="exp-date">2023</div>
-                <div class="exp-desc">
-                    Presentation on novel evaluation frameworks using multi-agent systems for LLM assessment.
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="exp-title">Panel: Security of Generative AI and Generative AI in Security</div>
-                <div class="exp-org">DIMVA Conference</div>
-                <div class="exp-date">2023</div>
-                <div class="exp-desc">
-                    Invited panelist discussing the dual aspects of generative AI security challenges and applications.
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="exp-title">Multi-modal Fact-checking: Out-of-Context Images</div>
-                <div class="exp-org">UCL Information Security seminars, Max Planck Institute</div>
-                <div class="exp-date">2022</div>
-                <div class="exp-desc">
-                    Research presentations on detecting and countering misinformation through multi-modal approaches.
-                </div>
-            </div>
-        </div>
-
-        <!-- Experience Section -->
-        <div class="section" id="experience">
+        <!-- Experience -->
+        <section class="section" id="experience">
             <h2>Experience</h2>
             
-            <div class="experience-item">
+            <div class="exp">
                 <div class="exp-title">AI Security Researcher</div>
-                <div class="exp-org">Microsoft Security Response Center (MSRC), Microsoft Research Cambridge, UK</div>
-                <div class="exp-date">2024 - Present</div>
-                <div class="exp-desc">
-                    Conducting AI security and safety research. Assessing AI security vulnerabilities reported through Microsoft's AI Bug Bounty program.
-                </div>
+                <div class="exp-org">Microsoft Security Response Center (MSRC), Microsoft Research Cambridge</div>
+                <div class="exp-date">2024–Present</div>
+                <div class="exp-desc">AI security and safety research. Assessing vulnerabilities through Microsoft's AI Bug Bounty program.</div>
             </div>
 
-            <div class="experience-item">
+            <div class="exp">
                 <div class="exp-title">PhD in Computer Science</div>
-                <div class="exp-org">CISPA Helmholtz Center for Information Security, Germany</div>
-                <div class="exp-date">2019 - 2024</div>
-                <div class="exp-desc">
-                    Advisor: Prof. Dr. Mario Fritz. External reviewers: Prof. Dr. Battista Biggio and Prof. Dr. Florian Tramèr. <span class="award-highlight">Grade: Summa cum laude.</span>
-                </div>
-                
+                <div class="exp-org">CISPA Helmholtz Center for Information Security</div>
+                <div class="exp-date">2019–2024</div>
+                <div class="exp-desc">Advisor: Prof. Dr. Mario Fritz. External reviewers: Prof. Dr. Battista Biggio and Prof. Dr. Florian Tramèr. <span class="award-highlight">Summa cum laude</span> 🏆</div>
             </div>
 
-            <div class="experience-item">
+            <div class="exp">
                 <div class="exp-title">Research Assistant</div>
-                <div class="exp-org">Max Planck Institute for Informatics, Germany</div>
-                <div class="exp-date">2017 - 2019</div>
-                <div class="exp-desc">
-                    Advised by Prof. Dr. Andreas Bulling. Research on brain-computer inteface, ML, and human-computer interaction.
-                </div>
+                <div class="exp-org">Max Planck Institute for Informatics</div>
+                <div class="exp-date">2017–2019</div>
+                <div class="exp-desc">Advised by Prof. Dr. Andreas Bulling. Research on brain-computer interfaces, ML, and HCI.</div>
             </div>
 
-            <div class="experience-item">
+            <div class="exp">
                 <div class="exp-title">Quality Assurance Engineer</div>
-                <div class="exp-org">Mentor Graphics (Currently, Siemens EDA), Egypt</div>
-                <div class="exp-date">2013 - 2017</div>
-                <div class="exp-desc">
-                    Software quality assurance and testing for electronic design automation tools.
-                </div>
+                <div class="exp-org">Mentor Graphics (now Siemens EDA)</div>
+                <div class="exp-date">2013–2017</div>
+                <div class="exp-desc">Software QA for electronic design automation tools.</div>
             </div>
-        </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            <p>© 2025 Sahar Abdelnabi. Built with passion for AI security research.</p>
-        </div>
+        </section>
     </div>
+
+    <footer class="footer">
+        © 2025 Sahar Abdelnabi · Built with passion for AI security research
+    </footer>
 </body>
 </html>
