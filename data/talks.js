@@ -15,7 +15,8 @@ const TALKS = [
   { title: "AI Agents May Always Fall for Prompt Injections: Casting Prompt Injection via the Lens of Contextual Integrity",
     kind: "talk",
     at: [{ name: "KU Leuven Summer School on Security and Privacy in the Age of AI", year: 2026,
-           url: "https://cybersecurity-research.be/summer-school-on-security-privacy-in-the-age-of-ai-2026/#speakers" }] },
+           url: "https://cybersecurity-research.be/summer-school-on-security-privacy-in-the-age-of-ai-2026/#speakers" }],
+    slides: "files/prompt-injection-ci.pdf" },
 
   { title: "Colosseum: Auditing Collusion in Cooperative Multi-Agent Systems",
     kind: "seminar",

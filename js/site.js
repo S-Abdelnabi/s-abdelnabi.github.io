@@ -210,7 +210,7 @@
     box.querySelector(".a-full").hidden = false;
   });
 
-  function pubHTML(p) {
+  function pubHTML(p, activeTopic) {
     const links = p.links || {};
     const main = links.paper || links.pdf || links.arxiv;
     const awards = [].concat(p.award || []).map((a) => `<span class="award">${icon("trophy")}${a}</span>`).join("");
@@ -219,8 +219,11 @@
       return `<a href="${attr(links[k])}">${icon(ic)}${label}</a>`;
     }).join("");
     const type = p.type || "conference";
+    const badge = p.topic
+      ? `<button type="button" class="topic" data-topic="${attr(p.topic)}" aria-pressed="${p.topic === activeTopic}"
+           title="Show all papers on ${attr(p.topic)}">${p.topic}</button>` : "";
     return `<article class="pub" data-type="${type}">
-      <div><span class="venue ${type}">${p.venue}</span></div>
+      <div>${badge}</div>
       <div>
         <div class="pub-title">${link(p.title, main)}${p.selected ? icon("star", "star") : ""}</div>
         <div class="pub-authors">${authorsHTML(p.authors)}</div>
@@ -233,11 +236,18 @@
     const pubs = data("PUBLICATIONS");
     if (!pubs) return dataError("data/publications.js");
     const openYears = data("PUB_OPEN_YEARS") || 1;
-    const state = { type: "all", selected: false, q: "" };
+    const state = { type: "all", selected: false, q: "", topic: "" };
 
     const counts = { all: pubs.length };
     PUB_TYPES.forEach((t) => { counts[t.id] = pubs.filter((p) => (p.type || "conference") === t.id).length; });
     const nSelected = pubs.filter((p) => p.selected).length;
+
+    // Topics come from the data (most-used first), so new ones appear automatically.
+    const topicCount = {};
+    pubs.forEach((p) => { if (p.topic) topicCount[p.topic] = (topicCount[p.topic] || 0) + 1; });
+    const topics = Object.keys(topicCount).sort((a, b) => topicCount[b] - topicCount[a] || a.localeCompare(b));
+    const fromHash = /^#topic=(.+)$/.exec(location.hash);
+    if (fromHash && topicCount[decodeURIComponent(fromHash[1])]) state.topic = decodeURIComponent(fromHash[1]);
 
     const chips = [{ id: "all", label: "All" }].concat(PUB_TYPES).filter((t) => counts[t.id] > 0)
       .map((t) => `<button type="button" class="chip" data-type="${t.id}" aria-pressed="${t.id === "all"}">${t.label}<span class="n">${counts[t.id]}</span></button>`).join("");
@@ -250,33 +260,55 @@
         <div class="chips" role="group" aria-label="Publication type">${chips}</div>
         <span class="sep"></span>
         ${nSelected ? `<button type="button" class="chip" data-selected aria-pressed="false">${icon("star")}Selected<span class="n">${nSelected}</span></button>` : ""}
+        ${topics.length ? `<label class="topic-filter"><span class="visually-hidden">Topic</span><select>
+          <option value="">All topics</option>${topics.map((t) =>
+            `<option value="${attr(t)}">${t} (${topicCount[t]})</option>`).join("")}</select></label>` : ""}
       </div>
       <div class="legend">
-        ${PUB_TYPES.filter((t) => counts[t.id]).map((t) => `<span><i class="${t.id}"></i>${t.label}</span>`).join("")}
+        ${topics.length ? `<span>Click a topic to see related papers</span>` : ""}
         <span>* equal contribution</span>
         ${nSelected ? `<span>${icon("star", "star")} selected</span>` : ""}
       </div>
       <div class="pub-list"></div>`;
     const list = el.querySelector(".pub-list");
 
+    const select = el.querySelector(".topic-filter select");
+
+    function setTopic(t) {
+      state.topic = t;
+      if (select) { select.value = t; select.classList.toggle("is-set", !!t); }
+      try { history.replaceState(null, "", location.pathname + location.search + (t ? "#topic=" + encodeURIComponent(t) : "")); }
+      catch (err) { /* e.g. some browsers on file:// */ }
+      draw();
+    }
+
     function draw() {
       const q = state.q.trim().toLowerCase();
-      const filtered = state.type !== "all" || state.selected || q;
+      const filtered = state.type !== "all" || state.selected || q || state.topic;
       const match = pubs.filter((p) =>
         (state.type === "all" || (p.type || "conference") === state.type) &&
         (!state.selected || p.selected) &&
-        (!q || strip([p.title, p.authors, p.venue, p.venueFull, p.year, [].concat(p.award || []).join(" ")].join(" ")).toLowerCase().includes(q)));
+        (!state.topic || p.topic === state.topic) &&
+        (!q || strip([p.title, p.authors, p.topic, p.venue, p.venueFull, p.year, [].concat(p.award || []).join(" ")].join(" ")).toLowerCase().includes(q)));
       if (!match.length) { list.innerHTML = `<p class="empty">No publications match.</p>`; return; }
       const years = [...new Set(match.map((p) => p.year))].sort((a, b) => b - a);
       const allYears = [...new Set(pubs.map((p) => p.year))].sort((a, b) => b - a);
       list.innerHTML = years.map((y) => {
         const items = match.filter((p) => p.year === y);
         const open = filtered || allYears.indexOf(y) < openYears;
-        return fold(y, items.length + (items.length === 1 ? " paper" : " papers"), items.map(pubHTML).join(""), open);
+        return fold(y, items.length + (items.length === 1 ? " paper" : " papers"),
+          items.map((p) => pubHTML(p, state.topic)).join(""), open);
       }).join("");
     }
 
     el.addEventListener("click", (e) => {
+      const badge = e.target.closest("[data-topic]");
+      if (badge) {
+        // clicking the active topic again clears it
+        setTopic(state.topic === badge.dataset.topic ? "" : badge.dataset.topic);
+        el.querySelector(".toolbar").scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
       const chip = e.target.closest(".chip");
       if (!chip) return;
       if (chip.hasAttribute("data-selected")) {
@@ -289,6 +321,8 @@
       draw();
     });
     el.querySelector("input").addEventListener("input", (e) => { state.q = e.target.value; draw(); });
+    if (select) select.addEventListener("change", () => setTopic(select.value));
+    if (select && state.topic) { select.value = state.topic; select.classList.add("is-set"); }
     draw();
     return null; // already rendered
   };

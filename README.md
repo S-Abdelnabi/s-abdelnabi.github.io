@@ -25,9 +25,11 @@ Text in backticks `` `...` `` can contain quotes and HTML links.
 
 ## Common tasks
 
-- **Add a paper:** copy an entry in `data/publications.js`, set `type` to `conference`,
+- **Add a paper:** copy an entry in `data/publications.js`, set its `topic` (reuse an existing
+  one, or type a new one — the topic filter updates itself), set `type` to `conference`,
   `journal`, `workshop` or `preprint`, and add `selected: true` to star it. Also add it to
   `ref.bib` for the CV, with the same `keywords = {…}`.
+- **Link to one topic:** `publications.html#topic=Prompt%20injection` opens the page filtered.
 - **Someone joins the group:** add a line to `MEMBERS` (optionally a square photo in
   `images/people/` and `photo: "images/people/name.jpg"`).
 - **Someone leaves:** move their line from `MEMBERS` to `ALUMNI` and add `years` and `now`.
