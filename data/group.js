@@ -112,7 +112,7 @@ const CALLS = [
 const POSITIONS = [
   { title: "PhD students", status: "open",
     text: "PhD positions in Tübingen on AI safety, security, and alignment. Rolling applications.",
-    details: `A Master's degree (or finishing one) and familiarity with current AI research, e.g. through a thesis, seminars,
+    details: `A Master's degree (or finishing one) and familiarity with current AI research, e.g. through a thesis, AI safety fellowships, seminars,
       or conferences; a publication record is <em>not</em> required. Apply via the <a href="${APPLY_FORM}">interest form</a>,
       and/or through the <a href="https://ellis.eu/phd-postdoc">ELLIS PhD Program</a>, <a href="https://learning-systems.org/">CLS</a>,
       or <a href="https://imprs.is.mpg.de/">IMPRS-IS</a>.` },
@@ -135,12 +135,12 @@ const LOOKING_FOR = {
   intro: "Tell me about yourself in your own words, and be specific. A strong statement covers:",
   items: [
     { lead: "Your relevant experience",
-      text: "Why do you want to apply with me and your interest in research and science." },
+      text: "Why do you want to apply with me, and broadly describe your interest in research and science." },
     { lead: "How it connects to our work",
       text: `Your thoughts and previous experience, in light of the topics our group is working on
              (see our <a href="publications.html">publications</a> and the topics above).` },
     { lead: "What excites you",
-      text: "Which areas of collaboration excite you the most, and why." },
+      text: "Which areas of collaboration and research excite you the most, and why." },
     { lead: "Your plans",
       text: "Your thoughts and plans for a PhD with the group." },
   ],
@@ -151,10 +151,9 @@ const LOOKING_FOR = {
 const FAQ = [
   { q: "What should I write in my statement?",
     a: `Describe your relevant experience and interest in research, and why and how it may fit 
-        the topics our group is working on. Tell me which areas of research you find exciting, and share your thoughts
-        and plans for a PhD with the group. See <a href="#looking-for">What I'm looking for</a> above.` },
+        the topics our group is working on. See <a href="#looking-for">What I'm looking for</a> above.` },
   { q: "Can I use AI to write my statement or email?",
-    a: "You can if you use it to transform your own thoughts and ideas. Please don't use it to stuff keywords. Generic or AI-generated statements and emails are all similar and don't tell me anything about you." },
+    a: "You can if you use it to polish your own thoughts and ideas. Please don't use it to stuff keywords. Generic or AI-generated statements and emails are all similar and don't tell me anything about you." },
   { q: "How do I apply for a specific project (an open call)?",
     a: "Each open call links to its own application form, use that one. The general interest form is for all other positions." },
   { q: "Will I hear back after filling in the form?",
