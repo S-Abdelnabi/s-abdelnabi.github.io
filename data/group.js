@@ -24,6 +24,9 @@ const MEMBERS = [
 
   { name: "Abhinav Kumar", role: "visiting", url: "https://www.securegradients.com/" },
   { name: "Haneen Najjar", role: "visiting", url: "https://haneenn24.github.io/" },
+
+  { name: "Joshua Swanson", role: "intern", url: "https://scholar.google.com/citations?user=jiecQyEAAAAJ&hl=en" },
+  { name: "Dorian Benhamou Goldfajn", role: "intern", url: "https://scholar.google.com/citations?user=U8ARMesAAAAJ&hl=en" },
 ];
 
 // Headings for each role (and their order on the page).
@@ -46,6 +49,10 @@ const ROLES = [
 const ALUMNI = [
   { name: "Luca Scionis", url: "https://scholar.google.com/citations?user=4fxF0HMAAAAJ&hl=it",
     role: "Visiting PhD student" },
+  { name: "Yasmine Kaced", url: "https://www.linkedin.com/in/yasmine-kaced-48698229b/",
+    role: "intern" },
+  { name: "Mariam Lomishvili", url: "https://www.linkedin.com/in/mariam-lomishvili-b6825b2b1/",
+    role: "intern" },
 ];
 
 // Shown in the Alumni section while the list above is empty.
