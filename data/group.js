@@ -50,9 +50,9 @@ const ALUMNI = [
   { name: "Luca Scionis", url: "https://scholar.google.com/citations?user=4fxF0HMAAAAJ&hl=it",
     role: "Visiting PhD student" },
   { name: "Yasmine Kaced", url: "https://www.linkedin.com/in/yasmine-kaced-48698229b/",
-    role: "intern" },
+    role: "CaCTüS program research intern" },
   { name: "Mariam Lomishvili", url: "https://www.linkedin.com/in/mariam-lomishvili-b6825b2b1/",
-    role: "intern" },
+    role: "CaCTüS program research intern" },
 ];
 
 // Shown in the Alumni section while the list above is empty.
